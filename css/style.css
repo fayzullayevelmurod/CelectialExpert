@@ -28,6 +28,7 @@ html {
 }
 
 body {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
 }
 
@@ -52,16 +53,6 @@ address {
   position: relative;
 }
 
-.wrapper.home .main_container {
-  max-width: 1440px;
-  padding: 0 40px;
-}
-
-.container_wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
 h1,
 h2,
 h3,
@@ -78,6 +69,95 @@ label {
 }
 
 .main_container {
-  max-width: 1380px;
-  padding: 0 10px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #335269;
+}
+header .main_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav_link {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header .nav_link a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+}
+header .header_contact {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+header .header_contact a {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+header .header_contact span {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-decoration-line: underline;
+  opacity: 0.5;
+}
+header .header_burger {
+  display: none;
+}
+header .header_media_logo {
+  display: none;
+}
+header .header_phone_media {
+  display: none;
+}
+
+@media only screen and (max-width: 993px) {
+  header nav {
+    display: none;
+  }
+  header .logo {
+    display: none;
+  }
+  header .header_burger {
+    flex: 1;
+    display: flex;
+  }
+  header .header_contact {
+    flex: 1;
+  }
+  header .header_media_logo {
+    width: 126px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 744px) {
+  .main_container {
+    padding: 0 20px;
+  }
+  header .header_contact {
+    display: none;
+  }
+  header .header_phone_media {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+  }
 }/*# sourceMappingURL=style.css.map */
