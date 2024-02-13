@@ -75,7 +75,7 @@ label {
 }
 
 header {
-  padding: 20px 0;
+  margin-bottom: 400px;
   background-color: #335269;
 }
 header .main_container {
@@ -88,11 +88,45 @@ header .nav_link {
   align-items: center;
   gap: 40px;
 }
+header .nav_link .nav_item {
+  padding: 30px 0;
+}
 header .nav_link a {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
+  letter-spacing: 0%;
+}
+header .dropdown_btn {
+  position: relative;
+}
+header .dropdown_btn:hover .dropdown_link {
+  opacity: 1;
+  z-index: 2;
+}
+header .dropdown_link {
+  box-shadow: 0px 4px 30px 0px rgba(54, 61, 68, 0.13);
+  background: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: -33px;
+  padding: 30px 35px 40px 35px;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.2s ease;
+}
+header .dropdown_link a {
+  white-space: nowrap;
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   letter-spacing: 0%;
 }
 header .header_contact {
@@ -143,6 +177,7 @@ header .header_phone_media {
     flex: 1;
   }
   header .header_media_logo {
+    padding: 20px 0;
     width: 126px;
     display: flex;
     justify-content: center;
