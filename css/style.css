@@ -228,7 +228,7 @@ footer .footer_top .footer_top_contact span {
 }
 footer .footer_center {
   display: none;
-  padding: 50px 0;
+  padding: 0 0 50px 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -236,6 +236,9 @@ footer .footer_center .footer_center_social {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+footer .footer_center .footer_center_logo img {
+  width: 124px;
 }
 footer .footer_center .footer_center_contact {
   display: flex;
@@ -313,6 +316,9 @@ footer .footer_bottom p span {
     display: flex;
     justify-content: center;
   }
+  footer .footer_top {
+    padding: 40px 0;
+  }
   footer .footer_top .footer_logo {
     display: none;
   }
@@ -331,8 +337,24 @@ footer .footer_bottom p span {
   footer .footer_top .footer_links {
     gap: 30px;
   }
+  footer .footer_top .footer_links a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  footer .footer_top .footer_top_block_media {
+    display: none;
+  }
+  footer .footer_bottom {
+    padding: 10px 0;
+  }
   footer .footer_bottom .footer_bottom_social {
     display: none;
+  }
+  footer .footer_bottom .footer_text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
   }
   footer .footer_center {
     display: flex;
@@ -349,5 +371,47 @@ footer .footer_bottom p span {
     flex: 1;
     display: flex;
     justify-content: end;
+  }
+}
+@media only screen and (max-width: 650px) {
+  footer .footer_top {
+    padding: 20px 0 40px 0;
+  }
+  footer .footer_top .footer_top_block {
+    width: 100%;
+  }
+  footer .footer_top .footer_links {
+    flex-direction: column;
+    gap: 16px;
+  }
+  footer .footer_top .line {
+    height: 270px;
+  }
+  footer .footer_top .footer_link {
+    gap: 16px;
+  }
+  footer .footer_center {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 0 20px 0;
+  }
+  footer .footer_center .footer_center_logo {
+    order: 1;
+  }
+  footer .footer_center .footer_center_contact {
+    order: 2;
+  }
+  footer .footer_center .footer_center_social {
+    order: 3;
+    margin: 0 auto;
+  }
+  footer .footer_bottom .year {
+    white-space: nowrap;
+  }
+  footer .footer_bottom .year span {
+    display: block;
+  }
+  footer .footer_bottom .site_map {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -291,7 +291,7 @@ footer {
 
     .footer_center {
         display: none;
-        padding: 50px 0;
+        padding: 0 0 50px 0;
         // display: flex;
         align-items: center;
         justify-content: space-between;
@@ -299,6 +299,13 @@ footer {
         .footer_center_social {
             @include flex-center();
             gap: 20px;
+        }
+
+        .footer_center_logo {
+            img {
+                width: 124px;
+            }
+            
         }
 
         .footer_center_contact {
