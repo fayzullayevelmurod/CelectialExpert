@@ -1,3 +1,13 @@
+@media only screen and (max-width: 1200px) {
+    footer {
+        .footer_top {
+            .footer_links {
+                gap: 20px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 993px) {
     header {
         nav {
@@ -22,6 +32,45 @@
             width: 126px;
             display: flex; 
             justify-content: center;
+        }
+    }
+
+    footer {
+        .footer_top {
+            
+            .footer_logo {
+                display: none;
+            }
+
+            .line_one {
+                display: none;
+            }
+
+            .footer_top_contact {
+                display: none;
+            }
+
+            .line {
+                margin: 0 30px;
+            }
+
+            .line_three {
+                display: none;
+            }
+
+            .footer_links {
+                gap: 30px;
+            }
+        }
+
+        .footer_bottom {
+            .footer_bottom_social {
+                display: none;
+            }
+        }
+
+        .footer_center {
+            display: flex;
         }
     }
 }

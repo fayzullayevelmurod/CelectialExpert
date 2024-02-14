@@ -267,6 +267,7 @@ footer {
             display: flex;
             @include flex-column();
             a {
+                white-space: nowrap;
                 color: $color-white;
                 font-size: 20px;
                 font-weight: 700;
