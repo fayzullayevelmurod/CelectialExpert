@@ -492,4 +492,7 @@ footer .footer_bottom p span {
   footer .footer_bottom .site_map {
     display: none;
   }
+  footer .footer_bottom .footer_text {
+    gap: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
