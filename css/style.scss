@@ -193,6 +193,12 @@ header {
 
         .nav_item {
             padding: 30px 0;
+            @include flex-center();
+            gap: 7px;
+
+            .dropdown_media_icon {
+                display: none;
+            }
         }
         
         a {
@@ -273,6 +279,8 @@ header {
 
         button {
             display: flex;
+            justify-content: center;
+            align-items: center;
             @include flex-column();
             gap: 10px;
             width: 30px;

@@ -177,6 +177,29 @@
 }
 
 @media only screen and (max-width: 430px) {
+    .mobile_menu {
+        background-color: rgb(26, 60, 85);
+        
+        .mobile_link {
+            width: 100%;
+            border-right: none;
+            align-items: center;
+            gap: 40px;
+            
+            a {
+                color: $color-white;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23px;
+                letter-spacing: 0%;
+            }
+        }
+
+        .mobile_dropdown_link {
+            display: none;
+        }
+    }
+
     footer {
         .footer_bottom {
 
