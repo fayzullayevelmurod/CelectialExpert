@@ -200,6 +200,13 @@
         }
     }
 
+    .mobile_menu.active {
+        background: rgb(26, 60, 85);
+        height: 100%;
+        width: 100%;
+        border: 1px solid red;
+    }
+
     footer {
         .footer_bottom {
 

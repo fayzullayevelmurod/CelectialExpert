@@ -68,10 +68,44 @@ label {
   padding-bottom: 0;
 }
 
+.hidden.active {
+  overflow-y: hidden;
+}
+
 .main_container {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 60px;
+}
+
+.main_title {
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.main_title_coral {
+  color: rgb(149, 128, 61);
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 73px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.main_btn {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0%;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .mobile_menu {
@@ -129,10 +163,10 @@ label {
 }
 
 header {
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 4;
-  margin-bottom: 400px;
-  background-color: #335269;
+  background-color: transparent;
 }
 header .main_container {
   display: flex;
@@ -246,6 +280,46 @@ header .header_media_logo {
 }
 header .header_phone_media {
   display: none;
+}
+
+.header_blue {
+  background-color: #335269;
+}
+
+.home {
+  background-image: url("../images/home_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .home_text {
+  padding-top: 182px;
+}
+.home .main_title {
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+}
+.home .main_title span {
+  display: block;
+}
+.home h6 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+.home p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  max-width: 804px;
+  margin-bottom: 30px;
+}
+.home .main_btn {
+  padding: 21px 44px;
 }
 
 footer {
@@ -523,6 +597,12 @@ footer .footer_bottom p span {
   }
   .mobile_menu .mobile_dropdown_link {
     display: none;
+  }
+  .mobile_menu.active {
+    background: rgb(26, 60, 85);
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
   }
   footer .footer_bottom .footer_text p {
     font-size: 12px;

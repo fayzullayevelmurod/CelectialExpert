@@ -108,10 +108,44 @@ label {
     padding-bottom: 0;
 }
 
+.hidden.active {
+    overflow-y: hidden;
+}
+
 .main_container {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 60px;
+}
+
+.main_title {
+    color: rgb(54, 61, 68);
+    font-family: $font-Montserrat;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.main_title_coral {
+    color: rgba(149, 128, 61, 1);
+    font-family: Montserrat;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 73px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.main_btn {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 // mobile_menu
@@ -127,7 +161,6 @@ label {
     @include transition();
 
     .mobile_link {
-        // border: 1px solid red;
         padding: 30px 36px;
         border-right: 1px solid rgb(217, 217, 217);
         display: flex;
@@ -177,10 +210,10 @@ label {
 
 // header
 header {
-    position: relative;
+    position: absolute;
+    width: 100%;
     z-index: 4;
-    margin-bottom: 400px;
-    background-color: #335269;
+    background-color: transparent;
 
     .main_container {
         @include flex-center();
@@ -316,7 +349,54 @@ header {
         display: none;
     }
 }
+
+.header_blue {
+    background-color: #335269;
+}
 // header
+
+// home
+.home {
+    background-image: url('../images/home_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .home_text {
+        padding-top: 182px;
+    }
+
+    .main_title {
+        color: $color-white;
+        margin-bottom: 25px;
+        span {
+            display: block;
+        }
+    }
+
+    h6 {
+        color: $color-white;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0%;
+        max-width: 804px;
+        margin-bottom: 30px;
+    }
+
+    .main_btn {
+        padding: 21px 44px;
+    }
+}
+// home
 
 // footer
 footer {
