@@ -89,15 +89,38 @@ label {
 }
 
 .main_title_coral {
-  background: #F2D063;
-  background: radial-gradient(circle farthest-side at center center, #F2D063 0%, #95803D 100%);
+  background: linear-gradient(-31.11deg, rgb(149, 128, 61), rgb(162, 139, 69), rgb(201, 174, 95), rgb(201, 174, 95), rgb(216, 177, 84), rgb(140, 109, 59));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
   font-weight: 400;
   line-height: 73px;
   letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.main_title_under {
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.main_title_under_coral {
+  background: linear-gradient(-31.11deg, rgb(149, 128, 61), rgb(162, 139, 69), rgb(201, 174, 95), rgb(201, 174, 95), rgb(216, 177, 84), rgb(140, 109, 59));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
   text-transform: uppercase;
 }
 
@@ -376,6 +399,124 @@ header .header_phone_media {
   display: none;
 }
 
+.services {
+  margin: 100px 0;
+}
+.services .main_title_under {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.services .servicesSwiper {
+  overflow: visible;
+}
+@media only screen and (min-width: 993px) {
+  .services .servicesSwiper .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .services .servicesSwiper .swiper-slide {
+    width: calc(33.3333333333% - 20px);
+    display: flex;
+    height: auto;
+  }
+}
+.services .servicesSwiper .services-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.services .servicesSwiper .services-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  transition: 0.2s ease;
+  margin: 0;
+}
+.services .servicesSwiper .services-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 12px;
+  border-radius: 35px;
+  background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%, rgb(162, 139, 69) -6.259%, rgb(201, 174, 95) 9.706%, rgb(234, 212, 168) 44.281%, rgb(216, 177, 84) 86.033%, rgb(140, 109, 59) 108.214%);
+}
+@media only screen and (min-width: 774px) {
+  .services .servicesSwiper .services-pagination {
+    display: none;
+  }
+}
+.services .servicesSwiper .services_card {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.services .servicesSwiper .services_card svg path {
+  transition: 0.2s ease;
+}
+.services .servicesSwiper .services_card h6 {
+  color: rgb(54, 61, 68);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+.services .servicesSwiper .services_card ul {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.services .servicesSwiper .services_card ul li {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  opacity: 0.5;
+}
+.services .servicesSwiper .card_one:hover svg path:nth-child(1) {
+  fill: #3BD1A2;
+}
+.services .servicesSwiper .card_one:hover svg path:nth-child(2) {
+  fill: #CCE3DA;
+}
+.services .servicesSwiper .card_two:hover svg path:nth-child(1) {
+  fill: #FFD100;
+}
+.services .servicesSwiper .card_two:hover svg path:nth-child(2) {
+  fill: #FFD100;
+}
+.services .servicesSwiper .card_two:hover svg path:nth-child(3) {
+  fill: #EDE9C6;
+}
+.services .servicesSwiper .card_three:hover svg path:nth-child(1) {
+  fill: #FC6F00;
+}
+.services .servicesSwiper .card_three:hover svg path:nth-child(2) {
+  fill: #EDE9C6;
+}
+.services .servicesSwiper .card_four:hover svg path:nth-child(1) {
+  fill: #ED4A36;
+}
+.services .servicesSwiper .card_four:hover svg path:nth-child(2) {
+  fill: #EFD2CF;
+}
+.services .servicesSwiper .card_five:hover svg path:nth-child(1) {
+  fill: #C6DAE8;
+}
+.services .servicesSwiper .card_five:hover svg path:nth-child(2) {
+  fill: #525CFF;
+}
+.services .servicesSwiper .card_six:hover svg path:nth-child(1) {
+  fill: #B847FF;
+}
+.services .servicesSwiper .card_six:hover svg path:nth-child(2) {
+  fill: #E4C0EE;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
@@ -529,6 +670,14 @@ footer .footer_bottom p span {
     font-weight: 400;
     line-height: 49px;
   }
+  .main_title_under {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .main_title_under_coral {
+    font-size: 30px;
+    line-height: 37px;
+  }
   header nav {
     display: none;
   }
@@ -577,6 +726,32 @@ footer .footer_bottom p span {
     width: 463px;
     right: -115px;
     bottom: -33px;
+  }
+  .services {
+    margin: 85px 0;
+  }
+  .services .main_title_under {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+@media only screen and (max-width: 993px) and (min-width: 744px) {
+  .services .servicesSwiper .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 993px) and (min-width: 744px) {
+  .services .servicesSwiper .swiper-slide {
+    width: calc(50% - 10px);
+  }
+}
+@media only screen and (max-width: 993px) {
+  .services .servicesSwiper .swiper-slide .services_card {
+    padding: 20px;
   }
   footer .footer_top {
     padding: 40px 0;
@@ -646,6 +821,14 @@ footer .footer_bottom p span {
     font-weight: 400;
     line-height: 32px;
   }
+  .main_title_under {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .main_title_under_coral {
+    font-size: 26px;
+    line-height: 32px;
+  }
   .home .home_text {
     padding-top: 94px;
     text-align: center;
@@ -685,6 +868,18 @@ footer .footer_bottom p span {
     display: flex;
     align-items: center;
     gap: 20px;
+  }
+  .services {
+    margin: 50px 0;
+  }
+  .services .main_title_under {
+    margin-bottom: 20px;
+  }
+  .services .servicesSwiper .services_card ul {
+    gap: 12px;
+  }
+  .services .servicesSwiper .services_card svg {
+    width: 100%;
   }
   footer .footer_top {
     padding: 20px 0 40px 0;
