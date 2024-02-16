@@ -81,36 +81,72 @@ label {
 .main_title {
   color: rgb(54, 61, 68);
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 400;
-  line-height: 49px;
+  line-height: 73px;
   letter-spacing: 0%;
   text-transform: uppercase;
 }
 
 .main_title_coral {
-  color: rgb(149, 128, 61);
-  font-family: Montserrat;
+  background: #F2D063;
+  background: radial-gradient(circle farthest-side at center center, #F2D063 0%, #95803D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
   font-size: 60px;
   font-weight: 400;
   line-height: 73px;
   letter-spacing: 0%;
-  text-align: left;
   text-transform: uppercase;
 }
 
-.main_btn {
+.main_btn_white {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0%;
   border: 1px solid rgb(255, 255, 255);
+  transition: 0.2s ease;
+}
+.main_btn_white:hover {
+  text-shadow: 4px 4px 4px rgba(109, 109, 109, 0.6);
+  color: rgb(255, 255, 255);
+  background: linear-gradient(-7.48deg, rgb(149, 128, 61) -32.808%, rgb(162, 139, 69) -21.011%, rgb(201, 174, 95) -3.544%, rgb(234, 212, 168) 34.284%, rgb(216, 177, 84) 79.964%, rgb(140, 109, 59) 104.232%);
+  border: 1px solid transparent;
+}
+.main_btn_white:active {
+  text-shadow: none;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(-7.48deg, rgb(149, 128, 61) -32.808%, rgb(162, 139, 69) -21.011%, rgb(201, 174, 95) -3.544%, rgb(234, 212, 168) 34.284%, rgb(216, 177, 84) 79.964%, rgb(140, 109, 59) 104.232%);
+}
+
+.main_btn_black {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0%;
+  border: 1px solid rgb(54, 61, 68);
+  transition: 0.2s ease;
+}
+.main_btn_black:hover {
+  text-shadow: 4px 4px 4px rgba(109, 109, 109, 0.6);
+  color: rgb(255, 255, 255);
+  background: linear-gradient(-7.48deg, rgb(149, 128, 61) -32.808%, rgb(162, 139, 69) -21.011%, rgb(201, 174, 95) -3.544%, rgb(234, 212, 168) 34.284%, rgb(216, 177, 84) 79.964%, rgb(140, 109, 59) 104.232%);
+  border: 1px solid transparent;
+}
+.main_btn_black:active {
+  text-shadow: none;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(-7.48deg, rgb(149, 128, 61) -32.808%, rgb(162, 139, 69) -21.011%, rgb(201, 174, 95) -3.544%, rgb(234, 212, 168) 34.284%, rgb(216, 177, 84) 79.964%, rgb(140, 109, 59) 104.232%);
 }
 
 .mobile_menu {
   background-color: rgb(255, 255, 255);
   position: fixed;
+  z-index: 3;
   top: 0;
   width: 100%;
   height: 100%;
@@ -290,6 +326,7 @@ header .header_phone_media {
   background-image: url("../images/home_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 .home .home_text {
   padding-top: 182px;
@@ -318,8 +355,23 @@ header .header_phone_media {
   max-width: 804px;
   margin-bottom: 30px;
 }
-.home .main_btn {
+.home .main_btn_white {
   padding: 21px 44px;
+  margin-bottom: 62px;
+}
+.home .home_social_media {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 86px;
+}
+.home .home_user_desktop {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  max-height: 713px;
+  max-width: 617px;
 }
 
 footer {
@@ -451,12 +503,30 @@ footer .footer_bottom p span {
   display: none;
 }
 
+@media only screen and (max-width: 1300px) {
+  .home p {
+    max-width: 491px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   footer .footer_top .footer_links {
     gap: 20px;
   }
 }
 @media only screen and (max-width: 993px) {
+  .main_container {
+    padding: 0 60px;
+  }
+  .main_title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49px;
+  }
+  .main_title_coral {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49px;
+  }
   header nav {
     display: none;
   }
@@ -475,6 +545,35 @@ footer .footer_bottom p span {
     width: 126px;
     display: flex;
     justify-content: center;
+  }
+  .home .home_text {
+    padding-top: 120px;
+  }
+  .home .main_title {
+    margin-bottom: 10px;
+  }
+  .home h6 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+  .home p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 30px;
+  }
+  .home .main_btn_white {
+    padding: 20px 30px;
+    margin-bottom: 106px;
+  }
+  .home .home_social_media {
+    padding-bottom: 60px;
+  }
+  .home .home_user_desktop {
+    width: 370px;
+    right: -15px;
   }
   footer .footer_top {
     padding: 40px 0;
@@ -520,7 +619,7 @@ footer .footer_bottom p span {
     display: flex;
   }
 }
-@media only screen and (max-width: 744px) {
+@media only screen and (max-width: 743px) {
   .main_container {
     padding: 0 20px;
   }
@@ -534,6 +633,16 @@ footer .footer_bottom p span {
   }
 }
 @media only screen and (max-width: 650px) {
+  .main_title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .main_title_coral {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 49px;
+  }
   footer .footer_top {
     padding: 20px 0 40px 0;
   }
