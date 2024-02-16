@@ -234,22 +234,19 @@ header .dropdown_btn {
   position: relative;
 }
 header .dropdown_btn:hover .dropdown_link {
-  opacity: 1;
-  z-index: 2;
+  display: flex;
 }
 header .dropdown_link {
   box-shadow: 0px 4px 30px 0px rgba(54, 61, 68, 0.13);
   background: rgb(255, 255, 255);
   position: absolute;
-  z-index: 2;
   top: 100%;
   left: -33px;
   padding: 30px 35px 40px 35px;
   flex-direction: column;
   display: flex;
   gap: 20px;
-  opacity: 0;
-  z-index: -1;
+  display: none;
   transition: 0.2s ease;
 }
 header .dropdown_link a {
@@ -326,6 +323,9 @@ header .header_phone_media {
   background-image: url("../images/home_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+}
+.home .main_container {
   position: relative;
 }
 .home .home_text {
@@ -367,11 +367,10 @@ header .header_phone_media {
 }
 .home .home_user_desktop {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -220px;
+  bottom: -60px;
   width: 40%;
-  max-height: 713px;
-  max-width: 617px;
+  width: 713px;
 }
 .home .home_img {
   display: none;
@@ -575,8 +574,9 @@ footer .footer_bottom p span {
     padding-bottom: 60px;
   }
   .home .home_user_desktop {
-    width: 370px;
-    right: -15px;
+    width: 463px;
+    right: -115px;
+    bottom: -33px;
   }
   footer .footer_top {
     padding: 40px 0;
