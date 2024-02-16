@@ -185,9 +185,60 @@
     }
 
     .main_title_coral {
-        font-size: 40px;
+        font-size: 26px;
         font-weight: 400;
-        line-height: 49px;
+        line-height: 32px;
+    }
+
+    .home {
+
+        .home_text {
+            padding-top: 94px;
+            text-align: center;
+
+            .home_social_media {
+                display: none;
+            }
+
+            .main_title {
+                margin-bottom: 6px;
+            }
+
+            h6 {
+                margin-bottom: 14px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+            
+            p {
+                font-size: 14px;
+                line-height: 16px;
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .main_btn_white {
+                padding: 15px 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        .home_user_desktop {
+            display: none;
+        }
+
+        .home_img {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            .home_img_social_media {
+                position: absolute;
+                bottom: 22px;
+                @include flex-center;
+                gap: 20px;
+            }
+        }
     }
 
     footer {

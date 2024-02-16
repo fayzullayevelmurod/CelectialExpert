@@ -373,6 +373,9 @@ header .header_phone_media {
   max-height: 713px;
   max-width: 617px;
 }
+.home .home_img {
+  display: none;
+}
 
 footer {
   background: rgb(26, 60, 85);
@@ -639,9 +642,49 @@ footer .footer_bottom p span {
     line-height: 32px;
   }
   .main_title_coral {
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 400;
-    line-height: 49px;
+    line-height: 32px;
+  }
+  .home .home_text {
+    padding-top: 94px;
+    text-align: center;
+  }
+  .home .home_text .home_social_media {
+    display: none;
+  }
+  .home .home_text .main_title {
+    margin-bottom: 6px;
+  }
+  .home .home_text h6 {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .home .home_text p {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .home .home_text .main_btn_white {
+    padding: 15px 20px;
+    margin-bottom: 0;
+  }
+  .home .home_user_desktop {
+    display: none;
+  }
+  .home .home_img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .home .home_img .home_img_social_media {
+    position: absolute;
+    bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
   footer .footer_top {
     padding: 20px 0 40px 0;
