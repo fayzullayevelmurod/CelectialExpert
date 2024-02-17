@@ -826,6 +826,28 @@ header .header_phone_media {
   background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%, rgb(162, 139, 69) -6.259%, rgb(201, 174, 95) 9.706%, rgb(234, 212, 168) 44.281%, rgb(216, 177, 84) 86.033%, rgb(140, 109, 59) 108.214%);
 }
 
+.work .main_title_under {
+  text-align: center;
+}
+.work .workswiper-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.work .workswiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  transition: 0.2s ease;
+  margin: 0;
+}
+.work .workswiper-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 12px;
+  border-radius: 35px;
+  background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%, rgb(162, 139, 69) -6.259%, rgb(201, 174, 95) 9.706%, rgb(234, 212, 168) 44.281%, rgb(216, 177, 84) 86.033%, rgb(140, 109, 59) 108.214%);
+}
+
 footer {
   background: rgb(26, 60, 85);
 }

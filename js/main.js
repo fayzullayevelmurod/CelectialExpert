@@ -117,3 +117,27 @@ try {
 } catch(err) {
     console.log(err);
 }
+
+try {
+    var price_services = new Swiper(".workSwiper", {
+        pagination: {
+          el: ".workswiper-pagination",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.25,
+                spaceBetween: 10,
+            },
+            650: {
+                slidesPerView: 2.25,
+                spaceBetween: 20,
+            },
+            993: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+} catch(err) {
+    console.log(err);
+}
