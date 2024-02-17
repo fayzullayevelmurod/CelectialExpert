@@ -826,8 +826,40 @@ header .header_phone_media {
   background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%, rgb(162, 139, 69) -6.259%, rgb(201, 174, 95) 9.706%, rgb(234, 212, 168) 44.281%, rgb(216, 177, 84) 86.033%, rgb(140, 109, 59) 108.214%);
 }
 
+.work {
+  margin-bottom: 100px;
+}
 .work .main_title_under {
   text-align: center;
+  margin-bottom: 40px;
+}
+.work .work_card {
+  height: 278px;
+  position: relative;
+  background: rgb(245, 245, 245);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work .work_card h6 {
+  color: rgb(54, 61, 68);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.work .work_card a {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  opacity: 0.5;
+  text-decoration-line: underline !important;
+}
+.work .work_card img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .work .workswiper-pagination {
   margin-top: 20px;
@@ -983,6 +1015,19 @@ footer .footer_bottom p span {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .work .work_card {
+    padding: 20px;
+  }
+  .work .work_card h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+  }
+  .work .work_card a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
   footer .footer_top .footer_links {
     gap: 20px;
   }

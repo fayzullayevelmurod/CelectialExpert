@@ -132,8 +132,8 @@ try {
                 slidesPerView: 2.25,
                 spaceBetween: 20,
             },
-            993: {
-                slidesPerView: 3,
+            1200: {
+                slidesPerView: 3.50,
                 spaceBetween: 30,
             },
         },

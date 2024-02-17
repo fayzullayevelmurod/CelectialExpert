@@ -710,7 +710,7 @@ header {
         margin-bottom: 40px;
     }
 
-    .casesSwiper {
+    .casesSwiper {  
         overflow: visible;
         
         .swiper-wrapper {
@@ -1045,8 +1045,42 @@ header {
 
 // work
 .work {
+    margin-bottom: 100px;
     .main_title_under {
         text-align: center;
+        margin-bottom: 40px;    
+    }
+
+    .work_card {
+        height: 278px;
+        position: relative;
+        background: rgb(245, 245, 245);
+        padding: 40px;
+        display: flex;
+        @include flex-column();
+        justify-content: space-between;
+
+        h6 {
+            color: rgb(54, 61, 68);
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 35px;
+        }
+
+        a {
+            color: rgb(54, 61, 68);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            opacity: .5;
+            text-decoration-line: underline !important;
+        }
+
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
     }
 
     .workswiper-pagination {
