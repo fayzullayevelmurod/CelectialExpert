@@ -677,7 +677,6 @@ header {
     .main_container {
         position: relative;
         @include flex-center();
-        border: 1px solid red;
     }
 
     .choice_text {
@@ -731,7 +730,7 @@ header {
             }
         }
 
-        .services-pagination {
+        .cases-pagination {
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -757,8 +756,8 @@ header {
         }
         
         .cases_card {
+            position: relative;
             width: 100%;
-            padding: 30px;
             @include flex-start();
             justify-content: space-between;
 
@@ -767,12 +766,112 @@ header {
             }
 
             .cases_text {
+                position: absolute;
+                inset: 40px 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h6 {
+                    color: $color-white;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 23px;
+                }
                 
+                .main_btn_white {
+                    width: 73px;
+                    height: 37px;
+                    margin: 0 auto;
+                    @include flex-full-center();
+                    color: $color-white;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 23px;
+                    border: 1px solid $color-white;
+
+                    &:hover {
+                        border: 1px solid transparent;
+                    }
+                }
+
+                p {
+                    color: $color-white;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                }
             }
+        }
+    }
+
+    .cases_btn {
+        margin-top: 40px;
+        @include flex-full-center();
+
+        .main_btn_black {
+            padding: 21px 45px;
         }
     }
 }
 // cases
+
+// about_company
+.about_company {
+    margin-bottom: 95px;
+
+    .about_company_in {
+        max-width: 985px;
+        margin: 0 auto;
+        @include flex-center();
+        gap: 32px;
+    }
+
+    .main_title_under {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    p {
+        color: rgb(54, 61, 68);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 487px;
+    }
+}
+// about_company
+
+// quality
+.quality {
+    margin-bottom: 100px;
+    
+    .main_title_under {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .quality_in {
+        @include flex-center();
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .quality_card {
+        width: calc(100% / 4 - 23px);
+        padding: 33px 30px;
+        text-align: center;
+
+        p {
+            margin-top: 10px;
+            color: rgb(54, 61, 68);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+        }
+    }
+}
+// quality
 
 // footer
 footer {

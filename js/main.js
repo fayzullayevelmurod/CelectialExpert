@@ -18,7 +18,8 @@ mobile_dropdown_btn.addEventListener('click', () => {
 })
 
 
-// services
+try {
+    // services
 var init = false;
 var swiper;
 function servicesSwiper() {
@@ -51,3 +52,44 @@ window.addEventListener("resize", () => {
 });
 
 // services
+} catch(err) {
+    console.log(err);
+}
+
+try {
+    // services
+var init = false;
+var swiper;
+function casesSwiper() {
+    if (window.innerWidth <= 743) {
+        if (!init) {
+            init = true;
+            swiper = new Swiper(".casesSwiper", {
+                slidesPerView: 1.50,
+                spaceBetween: 10,
+                breakpoints: {
+                    743: {
+                        slidesPerView: 1.50,
+                    }
+                },
+                pagination: {
+                    el: ".cases-pagination",
+                },
+            });
+        }
+    } else if (init) {
+        swiper.destroy();
+        init = false;
+    }
+}
+
+casesSwiper();
+
+window.addEventListener("resize", () => {
+    casesSwiper();
+});
+
+// services
+} catch(err) {
+    console.log(err);
+}
