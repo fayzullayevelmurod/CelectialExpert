@@ -667,6 +667,113 @@ header {
 }
 // services
 
+// choice
+.choice {
+    padding: 100px 0;
+    background-image: url('../images/choice_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .main_container {
+        position: relative;
+        @include flex-center();
+        border: 1px solid red;
+    }
+
+    .choice_text {
+        .main_title_under {
+            max-width: 750px;
+            color: $color-white;
+            margin-bottom: 20px;
+        }
+
+        .main_btn_white {
+            padding: 21px 45px;
+        }
+    }
+
+    .choice_img {
+        img {
+            position: absolute;
+            top: -105px;
+            right: -180px;
+        }
+    }
+}
+// choice
+
+// cases
+.cases {
+    margin: 100px 0;
+
+    .main_title_under {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .casesSwiper {
+        overflow: visible;
+        
+        .swiper-wrapper {
+            @media only screen and (min-width: 993px) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+            
+        }
+        
+        .swiper-slide {
+            @media only screen and (min-width: 993px) {
+                width: calc(100% / 3 - 20px);
+                display: flex;
+                height: auto;
+            }
+        }
+
+        .services-pagination {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 12px;
+                @include transition();
+                margin: 0;
+            }
+
+            .swiper-pagination-bullet-active {
+                width: 24px;
+                height: 12px;
+                border-radius: 35px;
+                background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%,rgb(162, 139, 69) -6.259%,rgb(201, 174, 95) 9.706%,rgb(234, 212, 168) 44.281%,rgb(216, 177, 84) 86.033%,rgb(140, 109, 59) 108.214%);
+            }
+
+            @media only screen and (min-width: 774px) {
+                display: none;
+
+            }
+        }
+        
+        .cases_card {
+            width: 100%;
+            padding: 30px;
+            @include flex-start();
+            justify-content: space-between;
+
+            img {
+                width: 100%;
+            }
+
+            .cases_text {
+                
+            }
+        }
+    }
+}
+// cases
+
 // footer
 footer {
     background: rgb(26, 60, 85);
