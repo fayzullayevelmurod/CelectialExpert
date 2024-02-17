@@ -845,7 +845,7 @@ header {
 // quality
 .quality {
     margin-bottom: 100px;
-    
+
     .main_title_under {
         text-align: center;
         margin-bottom: 40px;
@@ -872,6 +872,176 @@ header {
     }
 }
 // quality
+
+// seo_promation
+.seo_promation {
+    padding: 100px 0;
+    text-align: center;
+    background-image: url('../images/choice_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .main_title_under {
+        color: $color-white;
+    }
+
+    .main_btn_white {
+        margin-top: 26px;
+        padding: 26px 45px;
+    }
+}
+// seo_promation
+
+// price_services
+.price_services {
+    margin: 100px 0 60px 0;
+
+    .main_title_under {
+        text-align: center;
+    }
+
+    .price_servicesSwiper {
+        padding: 40px 0 40px 0;
+    }
+
+    .price_services_card {
+        border: 1px solid rgb(217, 217, 217);
+        width: 100%;
+        padding: 30px 30px 40px 30px;
+        @include transition();
+
+        .price_services_head {
+            text-align: center;
+
+            a {
+                border: 1px solid transparent;
+                padding: 13px 24px;
+                color: rgb(54, 61, 68);
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 23px;
+                margin-bottom: 11px;
+            }
+
+            p {
+                color: rgb(54, 61, 68);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgb(217, 217, 217);
+            }
+        }
+
+        .price_services_body {
+            padding: 20px 0 20px 20px;
+            display: flex;
+            @include flex-column();
+            gap: 15px;
+            border-bottom: 1px solid rgb(217, 217, 217);
+
+            li {
+                list-style-type: disc;
+                color: rgb(54, 61, 68);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+        }
+
+        .price_services_bottom {
+            text-align: center;
+            padding-top: 20px;
+
+            del {
+                color: rgb(54, 61, 68);
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23px;
+                text-decoration-line: line-through;
+                opacity: .5;
+            }
+
+            h5 {
+                color: rgb(54, 61, 68);
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 47px;
+                margin-bottom: 20px;
+            }
+
+            .main_btn_black {
+                padding: 21px 45px;
+            }
+        }
+
+        &:hover {
+            background: rgb(26, 60, 85);
+
+            .price_services_head {
+                a {
+                    border: 1px solid $color-white;
+                    color: $color-white;
+                }
+
+                p {
+                    color: $color-white;
+                    opacity: .7;
+                }
+            }
+
+            .price_services_body {
+                li {
+                    color: $color-white;
+                }
+            }
+
+            .price_services_bottom {
+                del {
+                    color: $color-white;
+                    opacity: .5;
+                }
+
+                h5 {
+                    color: $color-white;
+                }
+
+                .main_btn_black {
+                    color: $color-white;
+                    border: 1px solid $color-white;
+
+                    &:hover {
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    .price_services-pagination {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            @include transition();
+            margin: 0;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 24px;
+            height: 12px;
+            border-radius: 35px;
+            background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%,rgb(162, 139, 69) -6.259%,rgb(201, 174, 95) 9.706%,rgb(234, 212, 168) 44.281%,rgb(216, 177, 84) 86.033%,rgb(140, 109, 59) 108.214%);
+        }
+    }
+}
+// price_services
 
 // footer
 footer {

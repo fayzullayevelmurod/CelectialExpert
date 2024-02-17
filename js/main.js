@@ -93,3 +93,27 @@ window.addEventListener("resize", () => {
 } catch(err) {
     console.log(err);
 }
+
+try {
+    var price_services = new Swiper(".price_servicesSwiper", {
+        pagination: {
+          el: ".price_services-pagination",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.25,
+                spaceBetween: 10,
+            },
+            650: {
+                slidesPerView: 2.25,
+                spaceBetween: 40,
+            },
+            993: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+            },
+        },
+    });
+} catch(err) {
+    console.log(err);
+}
