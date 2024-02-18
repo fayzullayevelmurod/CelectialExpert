@@ -68,6 +68,19 @@ label {
   padding-bottom: 0;
 }
 
+.main_breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.main_breadcrumbs span {
+  color: rgb(245, 245, 245);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  opacity: 0.5;
+}
+
 .hidden.active {
   overflow-y: hidden;
 }
@@ -1010,6 +1023,27 @@ header .header_phone_media {
   border-bottom: 1px solid;
 }
 
+.services_home .main_title .main_title_coral {
+  display: inline;
+}
+.services_home .main_breadcrumbs {
+  margin-bottom: 42px;
+}
+.services_home .home_text {
+  padding-top: 110px;
+}
+.services_home h6 {
+  margin-bottom: 40px;
+}
+.services_home .home_user_desktop {
+  width: 900px;
+  bottom: 0;
+  right: -130px;
+}
+.services_home .main_btn_white {
+  margin-bottom: 100px;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
@@ -1255,6 +1289,13 @@ footer .footer_bottom p span {
     width: 463px;
     right: -115px;
     bottom: -33px;
+  }
+  .services_home .home_user_desktop {
+    width: 583px;
+    bottom: 0;
+  }
+  .services_home .home_text {
+    padding-top: 70px;
   }
   .choice {
     padding: 40px 0;
