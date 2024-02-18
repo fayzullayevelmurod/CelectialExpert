@@ -669,6 +669,7 @@ header {
 
 // choice
 .choice {
+    overflow: hidden;
     padding: 100px 0;
     background-image: url('../images/choice_bg.png');
     background-size: cover;
@@ -731,6 +732,7 @@ header {
         }
 
         .cases-pagination {
+            margin-top: 15px;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -749,7 +751,7 @@ header {
                 background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%,rgb(162, 139, 69) -6.259%,rgb(201, 174, 95) 9.706%,rgb(234, 212, 168) 44.281%,rgb(216, 177, 84) 86.033%,rgb(140, 109, 59) 108.214%);
             }
 
-            @media only screen and (min-width: 774px) {
+            @media only screen and (min-width: 993px) {
                 display: none;
 
             }
@@ -771,6 +773,10 @@ header {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
+                @media only screen and (max-width: 993px) {
+                    inset: 20px;
+                }
 
                 h6 {
                     color: $color-white;
@@ -852,7 +858,8 @@ header {
     }
 
     .quality_in {
-        @include flex-center();
+        display: flex;
+        align-items: start;
         gap: 30px;
         flex-wrap: wrap;
     }
@@ -907,6 +914,7 @@ header {
     .price_services_card {
         border: 1px solid rgb(217, 217, 217);
         width: 100%;
+        height: 100%;
         padding: 30px 30px 40px 30px;
         @include transition();
 
@@ -1221,7 +1229,7 @@ header {
 // seo_text
 .seo_text {
     margin-bottom: 100px;
-    
+
     .main_title_under {
         text-align: center;
         margin-bottom: 40px;

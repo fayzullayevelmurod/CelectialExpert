@@ -45,12 +45,6 @@ function servicesSwiper() {
     }
 }
 
-servicesSwiper();
-
-window.addEventListener("resize", () => {
-    servicesSwiper();
-});
-
 // services
 } catch(err) {
     console.log(err);
@@ -58,17 +52,17 @@ window.addEventListener("resize", () => {
 
 try {
     // services
-var init = false;
-var swiper;
+var init2 = false;
+var swiper2;
 function casesSwiper() {
-    if (window.innerWidth <= 743) {
-        if (!init) {
-            init = true;
-            swiper = new Swiper(".casesSwiper", {
+    if (window.innerWidth <= 993) {
+        if (!init2) {
+            init2 = true;
+            swiper2 = new Swiper(".casesSwiper", {
                 slidesPerView: 1.50,
                 spaceBetween: 10,
                 breakpoints: {
-                    743: {
+                    993: {
                         slidesPerView: 1.50,
                     }
                 },
@@ -77,16 +71,18 @@ function casesSwiper() {
                 },
             });
         }
-    } else if (init) {
-        swiper.destroy();
-        init = false;
+    } else if (init2) {
+        swiper2.destroy();
+        init2 = false;
     }
 }
 
 casesSwiper();
+servicesSwiper();
 
 window.addEventListener("resize", () => {
     casesSwiper();
+    servicesSwiper();
 });
 
 // services
@@ -106,7 +102,7 @@ try {
             },
             650: {
                 slidesPerView: 2.25,
-                spaceBetween: 40,
+                spaceBetween: 20,
             },
             993: {
                 slidesPerView: 3,
@@ -141,7 +137,6 @@ try {
 } catch(err) {
     console.log(err);
 }
-
 
 try {
     var partnerSwiper = new Swiper(".partnerSwiper", {

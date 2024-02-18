@@ -26,6 +26,38 @@
         }
     }
 
+    .choice {
+        padding: 60px 0;
+
+        .choice_text {
+            .main_title_under {
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 37px;
+
+                .main_title_under_coral {
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 37px;
+                }
+            }
+            
+            .main_btn_white {
+                padding: 20px 30px;
+            }
+        }
+
+        .choice_img {
+            img {
+                width: 50%;
+                transform: rotate(-9deg);
+                position: absolute;
+                top: -58px;
+                right: -166px;
+            }
+        }
+    }
+
     footer {
         .footer_top {
             .footer_links {
@@ -128,6 +160,25 @@
         }
     }
 
+    .choice {
+        padding: 40px 0;
+        .choice_text {
+            .main_title_under {
+                max-width: 379px;
+            }
+        }
+
+        .choice_img {
+            img {
+                width: 513px;
+                transform: rotate(-24deg);
+                position: absolute;
+                top: -25px;
+                right: -170px;
+            }
+        }
+    }
+
     .services {
         margin: 85px 0;
 
@@ -158,6 +209,185 @@
                     padding: 20px;
                 }
             }
+        }
+    }
+
+    .about_company {
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .quality {
+        margin-bottom: 80px;
+
+        .main_title_under {
+            margin-bottom: 30px;
+        }
+
+        .quality_in {
+            gap: 20px;
+        }
+
+        .quality_card {
+            padding: 23px 11px;
+            width: calc(100% / 2 - 10px);
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+            }
+        }
+    }
+
+    .seo_promation {
+        padding: 60px 0;
+
+        .main_btn_white {
+            padding: 20px 30px;
+        }
+    }
+
+    .price_services {
+        margin: 60px 0;
+
+        .price_servicesSwiper {
+            padding: 30px 0;
+        }
+
+        .price_services_card {
+            padding: 20px 25px 40px 25px;
+
+            .price_services_head {
+                a {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19px;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                }
+            }
+
+            .price_services_body {
+                li {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                }
+            }
+
+            .price_services_bottom {
+
+                del {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 23px;
+                }
+
+                h5 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 35px;
+                }
+
+                .main_btn_black {
+                    width: 100%;
+                    padding: 15px 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19px;
+                }
+            }
+        }
+
+    }
+
+    .work {
+        margin-bottom: 60px;
+
+        .main_title_under {
+            margin-bottom: 30px;
+        }
+
+        .work_card {
+            padding: 20px;
+            height: 174px;
+
+            h6 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 23px;
+            }
+
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            img {
+                width: 106px;
+            }
+        }
+    }
+
+    .partner {
+        margin-bottom: 60px;
+
+        .partner_card {
+            gap: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            margin: 10px auto 20px auto;
+        }
+    }
+
+    .articles {
+        .main_title_under {
+            margin-bottom: 30px;
+        }
+
+        .articles_card {
+            h6 {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .seo_text {
+        .main_title_under {
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
         }
     }
 
@@ -235,6 +465,70 @@
             flex: 1;
             display: flex;
             justify-content: end;
+        }
+    }
+
+    .about_company {
+        margin-bottom: 60px;
+
+        .main_title_under {
+            margin-bottom: 20px;
+        }
+
+        .about_company_in {
+            flex-direction: column-reverse;
+            gap: 15px;
+        }
+
+        p {
+            max-width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+        
+        .about_company_img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .articles {
+        .main_title_under {
+            margin-bottom: 20px;
+        }
+    }
+
+    .partner {
+        .partner_title_two {
+            margin-bottom: 20px;
+        }
+    }
+
+    .seo_text {
+        margin-bottom: 60px;
+
+        .main_title_under {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+
+    .work {
+        .work_card {
+            h6 {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 21px;
+            }
         }
     }
 }
@@ -317,6 +611,7 @@
         margin: 50px 0;
 
         .main_title_under {
+            font-size: 26px;
             margin-bottom: 20px;
         }
 
@@ -331,6 +626,82 @@
                     width: 100%;
                 }
             }
+        }
+    }
+
+    .choice {
+        padding: 40px 0;
+        .choice_text {
+            .main_title_under {
+                max-width: 379px;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+
+            .main_title_under_coral {
+                display: inline;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+
+            .main_btn_white {
+                padding: 15px 20px;
+            }
+            
+        }
+
+        .choice_img {
+            img {
+                width: 513px;
+                transform: rotate(-24deg);
+                position: absolute;
+                top: -25px;
+                right: -170px;
+            }
+        }
+    }
+
+    .quality {
+
+        .main_title_under {
+            margin-bottom: 20px;
+        }
+
+        .quality_in {
+            @include flex-column;
+            gap: 10px;
+        }
+
+        .quality_card {
+            width: 100%;
+            padding: 15px 30px;
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    .seo_promation {
+        padding: 40px 0;
+
+        .main_btn_white {
+            padding: 15px 30px;
+        }
+
+        .main_title_under {
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+
+        .main_title_under_coral {
+            margin-top: 10px;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 32px;
         }
     }
 
