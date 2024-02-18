@@ -1102,6 +1102,197 @@ header .header_phone_media {
   fill: #E4C0EE;
 }
 
+.services_seo .main_container {
+  padding: 100px 100px 100px 500px;
+  overflow: hidden;
+  background: rgb(245, 245, 245);
+  position: relative;
+}
+.services_seo .services_seo_img {
+  position: absolute;
+  bottom: -70px;
+  left: -119px;
+  width: 665px;
+}
+.services_seo .services_seo_text {
+  margin-left: auto;
+  max-width: 586px;
+}
+.services_seo .services_seo_text .main_title_under {
+  margin-bottom: 20px;
+}
+.services_seo .services_seo_text p {
+  margin-bottom: 10px;
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.services_seo .services_seo_text .main_btn_black {
+  margin-top: 30px;
+  padding: 20px 45px;
+}
+
+.why_seo {
+  margin: 100px 0;
+}
+.why_seo .main_title_under {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.why_seo .why_seo_in {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: stretch;
+}
+.why_seo .why_seo_card {
+  width: calc(50% - 15px);
+  display: flex;
+  align-items: start;
+  gap: 13px;
+  padding: 34px;
+}
+.why_seo .why_seo_card h6 {
+  color: rgb(54, 61, 68);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.why_seo .why_seo_card p {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.order_services {
+  margin-bottom: 100px;
+}
+.order_services .main_title_under {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.order_services .main_title_under .main_title_under_coral {
+  display: block;
+}
+.order_services .order_services_in {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 30px;
+}
+.order_services .order_services_card {
+  width: calc(33.3333333333% - 20px);
+  padding: 30px;
+  background: rgb(245, 245, 245);
+}
+.order_services .order_services_card img {
+  margin-bottom: 10px;
+}
+.order_services .order_services_card h6 {
+  color: rgb(54, 61, 68);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.order_services .order_services_card p {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.answer .answer_in .accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.answer .answer_in .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #03b5d2;
+}
+.answer .answer_in .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.answer .answer_in .accordion button:hover,
+.answer .answer_in .accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.answer .answer_in .accordion button:hover::after,
+.answer .answer_in .accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.answer .answer_in .accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.answer .answer_in .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.answer .answer_in .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.answer .answer_in .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.answer .answer_in .accordion button[aria-expanded=true] {
+  color: #03b5d2;
+}
+.answer .answer_in .accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.answer .answer_in .accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.answer .answer_in .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.answer .answer_in .accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
