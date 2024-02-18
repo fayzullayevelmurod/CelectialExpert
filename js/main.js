@@ -119,7 +119,7 @@ try {
 }
 
 try {
-    var price_services = new Swiper(".workSwiper", {
+    var workSwiper = new Swiper(".workSwiper", {
         pagination: {
           el: ".workswiper-pagination",
         },
@@ -134,6 +134,56 @@ try {
             },
             1200: {
                 slidesPerView: 3.50,
+                spaceBetween: 30,
+            },
+        },
+    });
+} catch(err) {
+    console.log(err);
+}
+
+
+try {
+    var partnerSwiper = new Swiper(".partnerSwiper", {
+        pagination: {
+          el: ".partner-pagination",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            650: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 7,
+                spaceBetween: 30,
+            },
+        },
+    });
+} catch(err) {
+    console.log(err);
+}
+
+try {
+    var articlesSwiper = new Swiper(".articlesSwiper", {
+        pagination: {
+          el: ".articles-pagination",
+        },
+        breakpoints: {
+            320: {
+                
+                slidesPerView: 1.70,
+                spaceBetween: 18,
+            },
+            650: {
+                slidesPerView: 3,
+                spaceBetween: 18,
+            },
+            1200: {
+                slidesPerView: 4,
                 spaceBetween: 30,
             },
         },
