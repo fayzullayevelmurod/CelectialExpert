@@ -402,6 +402,31 @@
         }
     }
 
+    .services_home_under {
+        .main_container {
+            gap: 18px;
+        }
+
+        .services_home_card {
+
+            svg {
+                width: 70px;
+                height: 70px;
+            }
+
+            h6 {
+                margin: 15px 0 10px 0;
+                font-size: 16px;
+                line-height: 19px;
+            }
+    
+            p {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+
     footer {
         .footer_top {
             padding: 40px 0;
@@ -539,6 +564,26 @@
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 21px;
+            }
+        }
+    }
+
+    .services_home_under {
+        margin: 40px 0 60px 0;
+        .main_container {
+            @include flex-column;
+            gap: 10px;
+        }
+
+        .services_home_card {
+            padding: 20px;
+            text-align: left;
+            width: 100%;
+            display: flex;
+            gap: 15px;
+            
+            h6 {
+                margin: 0 0 10px 0;
             }
         }
     }

@@ -1030,6 +1030,8 @@ header .header_phone_media {
   margin-bottom: 42px;
 }
 .services_home .home_text {
+  position: relative;
+  z-index: 2;
   padding-top: 110px;
 }
 .services_home h6 {
@@ -1038,10 +1040,66 @@ header .header_phone_media {
 .services_home .home_user_desktop {
   width: 900px;
   bottom: 0;
-  right: -130px;
+  right: -75px;
 }
 .services_home .main_btn_white {
   margin-bottom: 100px;
+}
+
+.services_home_under {
+  margin: 60px 0 100px 0;
+}
+.services_home_under .main_container {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.services_home_under .services_home_card {
+  width: calc(33.3333333333% - 20px);
+  text-align: center;
+  border: 1px solid rgb(217, 217, 217);
+  background: rgb(255, 255, 255);
+  padding: 25px 20px 40px 20px;
+}
+.services_home_under .services_home_card h6 {
+  color: rgb(54, 61, 68);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  margin: 20px 0 10px 0;
+}
+.services_home_under .services_home_card p {
+  max-width: 270px;
+  margin: 0 auto;
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.services_home_under .services_home_card svg path {
+  transition: 0.2s ease;
+}
+.services_home_under .card_one:hover svg path:nth-child(1) {
+  fill: #ED4A36;
+}
+.services_home_under .card_one:hover svg path:nth-child(2) {
+  fill: #EFD2CF;
+}
+.services_home_under .card_two:hover svg path:nth-child(1) {
+  fill: #FFD100;
+}
+.services_home_under .card_two:hover svg path:nth-child(2) {
+  fill: #FFD100;
+}
+.services_home_under .card_two:hover svg path:nth-child(3) {
+  fill: #EDE9C6;
+}
+.services_home_under .card_three:hover svg path:nth-child(1) {
+  fill: #B847FF;
+}
+.services_home_under .card_three:hover svg path:nth-child(2) {
+  fill: #E4C0EE;
 }
 
 footer {
@@ -1467,6 +1525,22 @@ footer .footer_bottom p span {
     font-weight: 400;
     line-height: 16px;
   }
+  .services_home_under .main_container {
+    gap: 18px;
+  }
+  .services_home_under .services_home_card svg {
+    width: 70px;
+    height: 70px;
+  }
+  .services_home_under .services_home_card h6 {
+    margin: 15px 0 10px 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .services_home_under .services_home_card p {
+    font-size: 14px;
+    line-height: 16px;
+  }
   footer .footer_top {
     padding: 40px 0;
   }
@@ -1566,6 +1640,23 @@ footer .footer_bottom p span {
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
+  }
+  .services_home_under {
+    margin: 40px 0 60px 0;
+  }
+  .services_home_under .main_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .services_home_under .services_home_card {
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+  }
+  .services_home_under .services_home_card h6 {
+    margin: 0 0 10px 0;
   }
 }
 @media only screen and (max-width: 650px) {
