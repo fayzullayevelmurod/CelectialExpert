@@ -1524,105 +1524,127 @@ header {
 
 // answer
 .answer {
+    margin-bottom: 100px;
+
+    .main_title_under {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
     .answer_in {
-        .accordion .accordion-item {
-            border-bottom: 1px solid #e5e5e5;
-          }
-          
-          .accordion .accordion-item button[aria-expanded='true'] {
-            border-bottom: 1px solid #03b5d2;
-          }
-          
-          .accordion button {
-            position: relative;
-            display: block;
-            text-align: left;
-            width: 100%;
-            padding: 1em 0;
-            color: #7288a2;
-            font-size: 1.15rem;
-            font-weight: 400;
+        max-width: 850px;
+        margin: 0 auto;
+
+        .accordion-item {
             border: none;
-            background: none;
-            outline: none;
-          }
+        }
           
-          .accordion button:hover,
-          .accordion button:focus {
-            cursor: pointer;
-            color: #03b5d2;
-          }
-          
-          .accordion button:hover::after,
-          .accordion button:focus::after {
-            cursor: pointer;
-            color: #03b5d2;
-            border: 1px solid #03b5d2;
-          }
-          
-          .accordion button .accordion-title {
-            padding: 1em 1.5em 1em 0;
-          }
-          
-          .accordion button .icon {
-            display: inline-block;
-            position: absolute;
-            top: 18px;
-            right: 0;
-            width: 22px;
-            height: 22px;
-            border: 1px solid;
-            border-radius: 22px;
-          }
-          
-          .accordion button .icon::before {
-            display: block;
-            position: absolute;
-            content: '';
-            top: 9px;
-            left: 5px;
-            width: 10px;
-            height: 2px;
-            background: currentColor;
-          }
-          .accordion button .icon::after {
-            display: block;
-            position: absolute;
-            content: '';
-            top: 5px;
-            left: 9px;
-            width: 2px;
-            height: 10px;
-            background: currentColor;
-          }
-          
-          .accordion button[aria-expanded='true'] {
-            color: #03b5d2;
-          }
-          .accordion button[aria-expanded='true'] .icon::after {
-            width: 0;
-          }
-          .accordion button[aria-expanded='true'] + .accordion-content {
-            opacity: 1;
-            max-height: 9em;
-            transition: all 200ms linear;
-            will-change: opacity, max-height;
-          }
-          .accordion .accordion-content {
-            opacity: 0;
-            max-height: 0;
-            overflow: hidden;
-            transition: opacity 200ms linear, max-height 200ms linear;
-            will-change: opacity, max-height;
-          }
-          .accordion .accordion-content p {
-            font-size: 1rem;
-            font-weight: 300;
-            margin: 2em 0;
-          }
+        .accordion button {
+        border-bottom: 1px solid #D9D9D9;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 20px;
+        color: rgb(54, 61, 68);
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        }
+        
+        .accordion button .accordion-title {
+        padding: 20px 0;
+        }
+        
+        .accordion button[aria-expanded='true'] + .accordion-content {
+        opacity: 1;
+        max-height: 9em;
+        transition: all 200ms linear;
+        will-change: opacity, max-height;
+        }
+        
+        .accordion .accordion-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+        }
+
+        .accordion .accordion-content p {
+        font-weight: 300;
+        margin: 20px;
+        color: rgb(54, 61, 68);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        }
     }
 }
 // answer
+
+// contact
+.contact {
+    padding: 100px 0;
+    background-image: url('../images/contact_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .main_title_under {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 20px;
+    }
+
+    h6 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        padding: 20px;
+        height: 60px;
+        border: 1px solid rgba(217, 217, 217, 0.4);
+        color: rgb(255, 255, 255);
+        font-family: $font-Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        background-color: transparent;
+        opacity: 0.7;
+    }
+
+    form {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .main_btn_white {
+        height: 60px;
+    }
+
+    .form_block {
+        width: calc(100% / 3 - 20px);
+    }
+
+    p {
+        margin-top: 10px;
+        color: rgb(255, 255, 255);
+        font-family: $font-Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        opacity: 0.5;
+    }
+}
+// contact
 
 // footer
 footer {
