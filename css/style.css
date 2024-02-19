@@ -259,6 +259,9 @@ header .nav_link .nav_item {
 header .nav_link .nav_item .dropdown_media_icon {
   display: none;
 }
+header .nav_link .nav_link_active {
+  font-weight: 700;
+}
 header .nav_link a {
   color: rgb(255, 255, 255);
   font-size: 16px;
@@ -339,10 +342,10 @@ header .header_burger button .burger_two {
   transition: 0.2s ease;
 }
 header .header_burger.active button .burger_one {
-  transform: translateY(12px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 header .header_burger.active button .burger_two {
-  transform: translateY(0px) rotate(-47deg);
+  transform: translateY(-6px) rotate(-47deg);
 }
 header .header_media_logo {
   display: none;
@@ -352,6 +355,7 @@ header .header_phone_media {
 }
 
 .header_blue {
+  position: static;
   background-color: #335269;
 }
 
@@ -1308,6 +1312,93 @@ header .header_phone_media {
   font-weight: 500;
   line-height: 15px;
   opacity: 0.5;
+}
+
+.new_seo_promation .main_title_under_coral {
+  display: block;
+}
+
+.new_main_breadcrumbs {
+  margin: 10px 0 26px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.new_main_breadcrumbs span {
+  color: rgb(54, 61, 68);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  opacity: 0.5;
+}
+
+.new_home .main_title {
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.new_home .new_home_in {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+.new_home .new_home_in .new_home_img {
+  flex: 1;
+}
+.new_home .new_home_in .new_home_img img {
+  width: 100%;
+}
+.new_home .new_home_in .new_home_text {
+  flex: 1;
+}
+.new_home .new_home_in .new_home_text p {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.new_home .new_home_in .new_home_text .new_home_text_one {
+  margin-bottom: 20px;
+}
+.new_home .new_home_in .new_home_text .home_text_list {
+  margin-bottom: 30px;
+}
+.new_home .new_home_in .new_home_text ul li {
+  padding-left: 10px;
+  list-style-position: inside;
+  list-style-type: disc !important;
+}
+
+.new_home_under_text {
+  margin: 100px 0 40px 0;
+}
+.new_home_under_text h3 {
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.new_home_under_text p {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.new_home_under_text .new_home_under_title {
+  text-align: left;
+}
+.new_home_under_text .news_center_img {
+  display: flex;
+  justify-content: center;
+  max-width: 790px;
+  margin: 40px auto;
 }
 
 footer {
