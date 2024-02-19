@@ -395,11 +395,18 @@
             margin-bottom: 30px;
         }
 
-        p {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16px;
+        .seo_text_content {
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            a {
+                font-size: 14px;
+            }
         }
+
     }
 
     .services_home_under {
@@ -423,6 +430,28 @@
             p {
                 font-size: 14px;
                 line-height: 16px;
+            }
+        }
+    }
+
+    .why_seo {
+        margin: 80px 0;
+
+        .main_title_under {
+            margin-bottom: 30px;
+        }
+
+        .why_seo_in {
+            gap: 20px;
+        }
+
+        .why_seo_card {
+            padding: 20px;
+            @include flex-column;
+            gap: 10px;
+
+            h6 {
+                margin-bottom: 15px;
             }
         }
     }
@@ -483,6 +512,76 @@
 
         .footer_center {
             display: flex;
+        }
+    }
+
+    .services_seo {
+        .main_container {
+            padding: 60px 30px 40px 60px;
+        }
+
+        .services_seo_text {
+            max-width: 302px;
+
+            .main_btn_black {
+                padding: 15px 30px;
+            }
+        }
+
+        .services_seo_img {
+            width: 600px;
+            bottom: -60px;
+        }
+    }
+
+    .order_services {
+
+        .order_services_in {
+            gap: 20px;
+        }
+
+        .order_services_card {
+            padding: 20px;
+            width: calc(100% / 2 - 10px);
+        }
+    }
+
+    .answer {
+        .main_title_under {
+            margin-bottom: 20px;
+        }
+
+        .answer_in {
+            .accordion button {
+                .accordion-title {
+                    text-align: left;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 50px 0;
+
+        h6 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+        }
+
+        form {
+            gap: 10px;
+
+            .form_block {
+                width: calc(100% / 3 - 7px);
+            }
+
+            .main_btn_white {
+                white-space: nowrap;
+            }
         }
     }
 }
@@ -585,6 +684,174 @@
             h6 {
                 margin: 0 0 10px 0;
             }
+        }
+    }
+
+    .services_home {
+        .main_breadcrumbs {
+            margin-bottom: 16px;
+        }
+    }
+
+    .services_seo {
+        .main_container {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            .services_seo_img {
+                width: 500px;
+                bottom: -122px;
+                left: -57px;
+                transform: rotate(20deg);
+            }
+        }
+
+        .services_seo_text {
+            padding: 0;
+            max-width: 100%;
+            padding-bottom: 190px;
+
+            .main_title_under {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            .main_btn_black {
+                height: 50px;
+                @include flex-full-center;
+                padding: 0;
+                width: 250px;
+                margin: 10px auto 0 auto;
+            }
+        }
+    }
+
+    .why_seo {
+        margin: 60px 0;
+        .why_seo_card {
+            padding: 0;
+            width: 100%;
+            text-align: center;
+
+            img {
+                margin: 0 auto;
+            }
+
+            h6 {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .cases {
+        margin: 80px 0;
+        .cases_btn {
+            .main_btn_black {
+                padding: 15px 30px;
+            }
+        }
+    }
+
+    .order_services {
+
+        margin-bottom: 80px;
+
+        .main_title_under {
+            margin-bottom: 20px;
+        }
+
+        .order_services_in {
+            @include flex-column;
+        }
+
+        .order_services_card {
+            width: 100%;
+
+            img {
+                width: 45px;
+            }
+
+            h6 {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .answer {
+        margin-bottom: 40px;
+
+        .answer_in {
+            .accordion button {
+                padding: 0 10px;
+                .accordion-title {
+                    padding: 10px 0;
+                    text-align: left;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                }
+                 
+                img {
+                    flex-shrink: 0;
+                    width: 30px;
+                }
+            }
+
+            .accordion {
+                .accordion-content {
+                    p {
+                        margin: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 40px 0;
+        form {
+            @include flex-column;
+            gap: 10px;
+            
+            .form_block {
+                height: 50px;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+
+        }
+        p {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 12px;
         }
     }
 }

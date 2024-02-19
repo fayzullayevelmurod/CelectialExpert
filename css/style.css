@@ -1728,10 +1728,13 @@ footer .footer_bottom p span {
   .seo_text .main_title_under {
     margin-bottom: 30px;
   }
-  .seo_text p {
+  .seo_text .seo_text_content p {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+  }
+  .seo_text .seo_text_content a {
+    font-size: 14px;
   }
   .services_home_under .main_container {
     gap: 18px;
@@ -1748,6 +1751,23 @@ footer .footer_bottom p span {
   .services_home_under .services_home_card p {
     font-size: 14px;
     line-height: 16px;
+  }
+  .why_seo {
+    margin: 80px 0;
+  }
+  .why_seo .main_title_under {
+    margin-bottom: 30px;
+  }
+  .why_seo .why_seo_in {
+    gap: 20px;
+  }
+  .why_seo .why_seo_card {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .why_seo .why_seo_card h6 {
+    margin-bottom: 15px;
   }
   footer .footer_top {
     padding: 40px 0;
@@ -1791,6 +1811,52 @@ footer .footer_bottom p span {
   }
   footer .footer_center {
     display: flex;
+  }
+  .services_seo .main_container {
+    padding: 60px 30px 40px 60px;
+  }
+  .services_seo .services_seo_text {
+    max-width: 302px;
+  }
+  .services_seo .services_seo_text .main_btn_black {
+    padding: 15px 30px;
+  }
+  .services_seo .services_seo_img {
+    width: 600px;
+    bottom: -60px;
+  }
+  .order_services .order_services_in {
+    gap: 20px;
+  }
+  .order_services .order_services_card {
+    padding: 20px;
+    width: calc(50% - 10px);
+  }
+  .answer .main_title_under {
+    margin-bottom: 20px;
+  }
+  .answer .answer_in .accordion button .accordion-title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+  .contact {
+    padding: 50px 0;
+  }
+  .contact h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+  .contact form {
+    gap: 10px;
+  }
+  .contact form .form_block {
+    width: calc(33.3333333333% - 7px);
+  }
+  .contact form .main_btn_white {
+    white-space: nowrap;
   }
 }
 @media only screen and (max-width: 743px) {
@@ -1865,6 +1931,137 @@ footer .footer_bottom p span {
   }
   .services_home_under .services_home_card h6 {
     margin: 0 0 10px 0;
+  }
+  .services_home .main_breadcrumbs {
+    margin-bottom: 16px;
+  }
+  .services_seo .main_container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .services_seo .main_container .services_seo_img {
+    width: 500px;
+    bottom: -122px;
+    left: -57px;
+    transform: rotate(20deg);
+  }
+  .services_seo .services_seo_text {
+    padding: 0;
+    max-width: 100%;
+    padding-bottom: 190px;
+  }
+  .services_seo .services_seo_text .main_title_under {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .services_seo .services_seo_text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .services_seo .services_seo_text .main_btn_black {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 250px;
+    margin: 10px auto 0 auto;
+  }
+  .why_seo {
+    margin: 60px 0;
+  }
+  .why_seo .why_seo_card {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .why_seo .why_seo_card img {
+    margin: 0 auto;
+  }
+  .why_seo .why_seo_card h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .why_seo .why_seo_card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .cases {
+    margin: 80px 0;
+  }
+  .cases .cases_btn .main_btn_black {
+    padding: 15px 30px;
+  }
+  .order_services {
+    margin-bottom: 80px;
+  }
+  .order_services .main_title_under {
+    margin-bottom: 20px;
+  }
+  .order_services .order_services_in {
+    flex-direction: column;
+  }
+  .order_services .order_services_card {
+    width: 100%;
+  }
+  .order_services .order_services_card img {
+    width: 45px;
+  }
+  .order_services .order_services_card h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .order_services .order_services_card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .answer {
+    margin-bottom: 40px;
+  }
+  .answer .answer_in .accordion button {
+    padding: 0 10px;
+  }
+  .answer .answer_in .accordion button .accordion-title {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .answer .answer_in .accordion button img {
+    flex-shrink: 0;
+    width: 30px;
+  }
+  .answer .answer_in .accordion .accordion-content p {
+    margin: 10px;
+    font-size: 14px;
+  }
+  .contact {
+    padding: 40px 0;
+  }
+  .contact form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact form .form_block {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .contact p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
   }
 }
 @media only screen and (max-width: 650px) {
