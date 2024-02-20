@@ -677,6 +677,57 @@
     .articles {
         margin: 60px 0;
     }
+
+    .cases_home {
+        .home_text {
+            padding-top: 0;
+        }
+
+        .main_title {
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 37px;
+
+            .main_title_coral {
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 37px;
+            }
+        }
+
+        .main_btn_white {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0%;
+            padding: 10px 12px;
+            margin-bottom: 140px;
+        }
+    }
+
+    .cases_in {
+        margin: 40px 0;
+
+        .main_container {
+            gap: 80px;
+        }
+
+        .cases_card {
+            gap: 20px;
+            h4 {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+    
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+    }
     
 }
 
@@ -1030,6 +1081,49 @@
             bottom: -145px;
         }
     }
+
+    .cases_home {
+
+        .new_main_breadcrumbs {
+            margin: 70px 0 19px 0;
+        }
+
+        .main_title {
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 26px;
+        }
+
+        .main_btn_white {
+            margin-bottom: 76px;
+        }
+    }
+
+    .cases_in {
+        .cases_card {
+            flex-direction: column;
+
+            .cases_card_text {
+                padding: 30px;
+                display: flex;
+                align-items: end;
+                gap: 20px;
+
+                .cases_card_block {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .main_container {
+            gap: 60px;
+        }
+
+        .cases_card_two {
+            flex-direction: column-reverse;
+        }
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -1201,6 +1295,43 @@
             font-size: 26px;
             font-weight: 400;
             line-height: 32px;
+        }
+    }
+
+    .cases_home {
+
+        .main_breadcrumbs {
+            span {
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 12px;
+            }
+        }
+
+        .home_text {
+            text-align: left;
+            padding-top: 0;
+        }
+
+        .main_title {
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 32px;
+
+            .main_title_coral {
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+
+        .main_btn_white {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 35px;
+            letter-spacing: 0%;
+            padding: 10px 12px !important;
+            margin: 26px 0 76px 0 !important;
         }
     }
 

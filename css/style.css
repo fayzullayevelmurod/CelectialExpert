@@ -1452,6 +1452,78 @@ header .header_phone_media {
   z-index: 2;
 }
 
+.cases_home {
+  background-image: url("../images/cases_home_bg.png");
+  background-position: center;
+}
+.cases_home .new_main_breadcrumbs {
+  margin-top: 80px;
+}
+.cases_home .new_main_breadcrumbs span {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.cases_home .home_text {
+  padding-top: 82px;
+}
+.cases_home .main_title {
+  display: flex;
+  gap: 15px;
+}
+.cases_home .main_btn_white {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 59px;
+  padding: 20px 28px;
+  margin-bottom: 140px;
+}
+
+.cases_in {
+  margin: 100px 0;
+}
+.cases_in .main_container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.cases_in .cases_card {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+}
+.cases_in .cases_card h4 {
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.cases_in .cases_card p {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.cases_in .cases_card .cases_card_left {
+  flex: 1;
+}
+.cases_in .cases_card .cases_card_right {
+  flex: 1;
+}
+.cases_in .cases_card .cases_card_text {
+  padding: 50px;
+  height: 100%;
+  background: rgb(245, 245, 245);
+}
+.cases_in .cases_card .cases_card_text .cases_card_block {
+  margin-bottom: 20px;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
@@ -2067,6 +2139,47 @@ footer .footer_bottom p span {
   .articles {
     margin: 60px 0;
   }
+  .cases_home .home_text {
+    padding-top: 0;
+  }
+  .cases_home .main_title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+  }
+  .cases_home .main_title .main_title_coral {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+  }
+  .cases_home .main_btn_white {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0%;
+    padding: 10px 12px;
+    margin-bottom: 140px;
+  }
+  .cases_in {
+    margin: 40px 0;
+  }
+  .cases_in .main_container {
+    gap: 80px;
+  }
+  .cases_in .cases_card {
+    gap: 20px;
+  }
+  .cases_in .cases_card h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .cases_in .cases_card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
 }
 @media only screen and (max-width: 743px) {
   .main_container {
@@ -2337,6 +2450,36 @@ footer .footer_bottom p span {
     width: 356px;
     bottom: -145px;
   }
+  .cases_home .new_main_breadcrumbs {
+    margin: 70px 0 19px 0;
+  }
+  .cases_home .main_title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 26px;
+  }
+  .cases_home .main_btn_white {
+    margin-bottom: 76px;
+  }
+  .cases_in .cases_card {
+    flex-direction: column;
+  }
+  .cases_in .cases_card .cases_card_text {
+    padding: 30px;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+  }
+  .cases_in .cases_card .cases_card_text .cases_card_block {
+    margin-bottom: 0;
+  }
+  .cases_in .main_container {
+    gap: 60px;
+  }
+  .cases_in .cases_card_two {
+    flex-direction: column-reverse;
+  }
 }
 @media only screen and (max-width: 650px) {
   .main_title {
@@ -2465,6 +2608,33 @@ footer .footer_bottom p span {
     font-size: 26px;
     font-weight: 400;
     line-height: 32px;
+  }
+  .cases_home .main_breadcrumbs span {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  .cases_home .home_text {
+    text-align: left;
+    padding-top: 0;
+  }
+  .cases_home .main_title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .cases_home .main_title .main_title_coral {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .cases_home .main_btn_white {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0%;
+    padding: 10px 12px !important;
+    margin: 26px 0 76px 0 !important;
   }
   footer .footer_top {
     padding: 20px 0 40px 0;
