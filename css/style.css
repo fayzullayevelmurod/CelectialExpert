@@ -2579,7 +2579,8 @@ footer .footer_bottom p span {
   .error .error_img {
     position: relative;
     width: 100%;
-    right: -80px;
+    min-width: 600px;
+    right: -10px;
     bottom: 0;
   }
 }
