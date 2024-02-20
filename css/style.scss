@@ -1706,6 +1706,10 @@ header {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 26px;
+
+                a {
+                    border-bottom: 1px solid;
+                }
             }
 
             .new_home_text_one {
@@ -1717,9 +1721,8 @@ header {
             }
 
             ul {
+                padding-left: 20px;
                 li {
-                    padding-left: 10px;
-                    list-style-position: inside;
                     list-style-type: disc !important;
                 }
             }
