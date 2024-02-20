@@ -1405,6 +1405,53 @@ header .header_phone_media {
   margin: 40px auto;
 }
 
+.contact_home .contact_title {
+  text-align: center;
+  color: rgb(54, 61, 68);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact_home .contact_home_in {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.contact_home .contact_home_left .contact_logo {
+  margin-bottom: 50px;
+}
+.contact_home .contact_home_left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.contact_home .contact_home_left ul li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contact_home .contact_home_left ul a {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+.contact_home .contact_home_right {
+  position: absolute;
+  bottom: -280px;
+  right: -100px;
+}
+
+.contact_block {
+  position: relative;
+  z-index: 2;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
@@ -1578,6 +1625,29 @@ footer .footer_bottom p span {
   }
   footer .footer_top .footer_links {
     gap: 20px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .contact_home .contact_title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0%;
+  }
+  .contact_home .contact_home_in {
+    padding: 60px 0;
+  }
+  .contact_home .contact_home_left {
+    max-width: 300px;
+  }
+  .contact_home .contact_home_left .contact_logo {
+    margin-bottom: 30px;
+    width: 193px;
+  }
+  .contact_home .contact_home_right {
+    width: 473px;
+    bottom: -100px;
+    right: -160px;
   }
 }
 @media only screen and (max-width: 993px) {
@@ -2226,6 +2296,46 @@ footer .footer_bottom p span {
     height: 221px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .contact_home .contact_home_in {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+  .contact_home .contact_title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .contact_home .contact_home_left {
+    margin-bottom: 225px;
+    max-width: 221px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact_home .contact_home_left .contact_logo {
+    width: 125px;
+    margin: 0 auto 20px auto;
+  }
+  .contact_home .contact_home_left ul {
+    align-items: center;
+    gap: 23px;
+  }
+  .contact_home .contact_home_left ul li {
+    gap: 1px;
+  }
+  .contact_home .contact_home_left ul a {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .contact_home .contact_home_right {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 356px;
+    bottom: -145px;
   }
 }
 @media only screen and (max-width: 650px) {
