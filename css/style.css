@@ -354,8 +354,17 @@ header .header_phone_media {
   display: none;
 }
 
+header.active {
+  background-color: #335269;
+}
+
 .header_blue {
   position: static;
+  background-color: #335269;
+}
+
+.header_blue.active {
+  position: absolute;
   background-color: #335269;
 }
 
@@ -1524,6 +1533,49 @@ header .header_phone_media {
   margin-bottom: 20px;
 }
 
+.error {
+  height: 100vh;
+  background-image: url("../images/error_desktop_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.error .error_img {
+  position: absolute;
+  bottom: 0;
+  right: -180px;
+  width: 69%;
+}
+.error .error_text {
+  padding: 220px 0 170px 0;
+  max-width: 534px;
+  text-align: center;
+}
+.error .error_text h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 244px;
+}
+.error .error_text h6 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 37px;
+  margin-bottom: 30px;
+}
+.error .error_text a {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: underline !important;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
@@ -2180,6 +2232,25 @@ footer .footer_bottom p span {
     font-weight: 400;
     line-height: 16px;
   }
+  .error {
+    height: auto;
+    background-image: url("../images/error_table_bg.png");
+    background-size: 100%;
+    background-position: center;
+  }
+  .error .main_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .error .error_text {
+    padding: 48px 0;
+  }
+  .error .error_img {
+    position: relative;
+    right: -80px;
+  }
 }
 @media only screen and (max-width: 743px) {
   .main_container {
@@ -2479,6 +2550,33 @@ footer .footer_bottom p span {
   }
   .cases_in .cases_card_two {
     flex-direction: column-reverse;
+  }
+  .error {
+    background-image: url("../images/error_media_bg.png");
+  }
+  .error .error_text {
+    padding: 160px 0 48px 0;
+  }
+  .error .error_text h1 {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 122px;
+  }
+  .error .error_text h6 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    margin: 0 auto 27px auto;
+  }
+  .error .error_text a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .error .error_img {
+    position: relative;
+    width: 100%;
+    right: -80px;
   }
 }
 @media only screen and (max-width: 650px) {
