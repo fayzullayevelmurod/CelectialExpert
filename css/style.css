@@ -2233,12 +2233,12 @@ footer .footer_bottom p span {
     line-height: 16px;
   }
   .error {
-    height: auto;
     background-image: url("../images/error_table_bg.png");
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
   }
   .error .main_container {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2250,6 +2250,7 @@ footer .footer_bottom p span {
   .error .error_img {
     position: relative;
     right: -80px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 743px) {
@@ -2554,9 +2555,10 @@ footer .footer_bottom p span {
   .error {
     height: 100vh;
     background-image: url("../images/error_media_bg.png");
+    background-size: cover;
   }
   .error .error_text {
-    padding: 160px 0 48px 0;
+    padding: 360px 0 48px 0;
   }
   .error .error_text h1 {
     font-size: 100px;
@@ -2578,6 +2580,7 @@ footer .footer_bottom p span {
     position: relative;
     width: 100%;
     right: -80px;
+    bottom: 0;
   }
 }
 @media only screen and (max-width: 650px) {
