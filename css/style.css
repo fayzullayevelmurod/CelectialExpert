@@ -2552,6 +2552,7 @@ footer .footer_bottom p span {
     flex-direction: column-reverse;
   }
   .error {
+    height: 100vh;
     background-image: url("../images/error_media_bg.png");
   }
   .error .error_text {
