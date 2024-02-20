@@ -1547,6 +1547,8 @@ header.active {
   width: 69%;
 }
 .error .error_text {
+  position: relative;
+  z-index: 2;
   padding: 220px 0 170px 0;
   max-width: 534px;
   text-align: center;
