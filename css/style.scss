@@ -2084,6 +2084,76 @@ header.active {
 }
 // about_work
 
+// about_work_comment
+.about_work_comment {
+    .work_about_card {
+        padding: 30px;
+        background: rgb(245, 245, 245);
+
+        h5 {
+            color: rgb(54, 61, 68);
+            font-family: $font-Montserrat;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: rgb(54, 61, 68);
+            font-family: $font-Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}
+// about_work_comment
+
+// about_sales
+.about_sales {
+    margin-bottom: 80px;
+    .main_container {
+        overflow: hidden;
+        padding: 80px;
+        position: relative;
+        display: flex;
+        background: rgb(245, 245, 245);
+    }
+
+    .about_sales_text {
+        .main_title_under {
+            margin-bottom: 40px;
+        }
+
+        p {
+            max-width: 538px;
+            color: rgb(54, 61, 68);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+    .about_sales_img {
+        width: 480px;
+        
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+
+
+    }
+
+    .about_sales_media_img {
+        display: none;
+    }
+}
+// about_sales
+
 // footer
 footer {
     background: rgb(26, 60, 85);

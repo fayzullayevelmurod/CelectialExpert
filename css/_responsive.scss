@@ -811,6 +811,45 @@
             }
         }
     }
+
+    .about_work_comment {
+        .work_about_card {
+            h5 {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 22px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .about_sales {
+        .main_container {
+            padding: 60px;
+        }
+
+        .about_sales_text {
+            .main_title_under {
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+            }
+        }
+
+        .about_sales_img {
+            img {
+                right: -95px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 743px) {
@@ -1295,6 +1334,54 @@
 
         .about_statistic_card {
             width: calc(100% / 2);
+        }
+    }
+
+    .about_sales {
+        margin-bottom: 60px;
+        
+        .main_container {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px 0 20px;
+        }
+
+        .about_sales_text {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 57%;
+
+            .main_title_under {
+                margin: 0 auto 10px auto;
+                max-width: 250px;
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 32px;
+
+                .main_title_under_coral {
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        .about_sales_img {
+            display: none;
+        }
+
+        .about_sales_media_img {
+            display: block;
+
+            img {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+            }
         }
     }
 }
