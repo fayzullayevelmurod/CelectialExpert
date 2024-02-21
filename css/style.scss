@@ -1987,6 +1987,10 @@ header.active {
         line-height: 49px;
         text-transform: uppercase;
         margin-bottom: 20px;
+
+        .main_title_under_coral {
+            display: block;
+        }
     }
 
     h4 {
@@ -2026,6 +2030,12 @@ header.active {
     }
 }
 // about_home
+
+// about_home_work
+.about_home_work {
+    margin-bottom: 90px;
+}
+// about_home_work
 
 // about_statistic
 .about_statistic {
@@ -2067,6 +2077,12 @@ header.active {
     }
 }
 // about_statistic
+
+// about_work
+.about_work {
+    margin-top: 40px;
+}
+// about_work
 
 // footer
 footer {
