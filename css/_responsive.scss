@@ -751,7 +751,62 @@
             width: 100%;
         }
     }
+
+    .new_main_breadcrumbs {
+        margin: 10px 0 18px 0;
+    }
+
+    .about_home {
+        .main_title_under {
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 20px;
+        }
+
+        .about_home_in {
+            gap: 20px;
+
+            .about_home_right {
+                p {
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 20px;
+                }
+
+                .main_btn_black {
+                    padding: 15px 30px;
+                }
+            }
+        }
+    }
     
+    .about_statistic {
+        margin: 80px 0;
+
+        .main_container {
+            gap: 20px 0;
+        }
+
+        .about_statistic_card {
+            h6 {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 37px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 743px) {
@@ -1183,6 +1238,64 @@
             right: -10px;
             bottom: 0;
         }
+    }
+
+    .about_home {
+        .about_home_in {
+            flex-direction: column;
+
+            .about_home_left {
+                width: 100%;
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .about_home_right {
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                }
+    
+                .main_btn_black {
+                    width: 250px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .main_title_under {
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .about_statistic {
+        margin: 60px 0;
+
+        .about_statistic_card {
+            width: calc(100% / 2);
+        }
+    }
+
+    .about_work {
+        margin-top: 40px;
     }
 }
 

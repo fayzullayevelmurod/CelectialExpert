@@ -1578,6 +1578,78 @@ header.active {
   text-decoration-line: underline !important;
 }
 
+.about_home .main_title_under {
+  text-align: center;
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.about_home h4 {
+  max-width: 808px;
+  margin: 0 auto 40px auto;
+  color: rgb(54, 61, 68);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center;
+}
+.about_home .about_home_in {
+  display: flex;
+  align-items: start;
+  gap: 30px;
+}
+.about_home .about_home_in .about_home_right {
+  flex: 1;
+}
+.about_home .about_home_in .about_home_right p {
+  color: rgb(54, 61, 68);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.about_home .about_home_in .about_home_right .main_btn_black {
+  padding: 20px 45px;
+}
+.about_home .about_home_in .about_home_left {
+  flex: 1;
+}
+
+.about_statistic {
+  margin: 100px auto;
+}
+.about_statistic .main_container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about_statistic .about_statistic_card {
+  width: calc(25% - 10px);
+}
+.about_statistic .about_statistic_card h6 {
+  background: linear-gradient(-31.11deg, rgb(149, 128, 61), rgb(162, 139, 69), rgb(201, 174, 95), rgb(201, 174, 95), rgb(216, 177, 84), rgb(140, 109, 59));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 73px;
+}
+.about_statistic .about_statistic_card p {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
@@ -2254,6 +2326,46 @@ footer .footer_bottom p span {
     right: -80px;
     width: 100%;
   }
+  .new_main_breadcrumbs {
+    margin: 10px 0 18px 0;
+  }
+  .about_home .main_title_under {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
+  .about_home h4 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .about_home .about_home_in {
+    gap: 20px;
+  }
+  .about_home .about_home_in .about_home_right p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+  .about_home .about_home_in .about_home_right .main_btn_black {
+    padding: 15px 30px;
+  }
+  .about_statistic {
+    margin: 80px 0;
+  }
+  .about_statistic .main_container {
+    gap: 20px 0;
+  }
+  .about_statistic .about_statistic_card h6 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+  }
+  .about_statistic .about_statistic_card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
 }
 @media only screen and (max-width: 743px) {
   .main_container {
@@ -2584,6 +2696,50 @@ footer .footer_bottom p span {
     min-width: 600px;
     right: -10px;
     bottom: 0;
+  }
+  .about_home .about_home_in {
+    flex-direction: column;
+  }
+  .about_home .about_home_in .about_home_left {
+    width: 100%;
+  }
+  .about_home .about_home_in .about_home_left img {
+    width: 100%;
+  }
+  .about_home .about_home_in .about_home_right p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .about_home .about_home_in .about_home_right .main_btn_black {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .about_home .main_title_under {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .about_home h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+  .about_statistic {
+    margin: 60px 0;
+  }
+  .about_statistic .about_statistic_card {
+    width: 50%;
+  }
+  .about_work {
+    margin-top: 40px;
   }
 }
 @media only screen and (max-width: 650px) {
