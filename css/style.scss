@@ -2660,7 +2660,7 @@ header.active {
 
 .cases_blog_cards {
     margin-bottom: 100px;
-    
+
     .blog_card_top_in {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -2681,6 +2681,49 @@ header.active {
     .card_ten { grid-area: 5 / 4 / 6 / 5; }
     .card_eleven { grid-area: 6 / 1 / 7 / 2; }
     .card_twelev { grid-area: 6 / 2 / 7 / 5; }
+
+    .blog_card_top_in {
+        .blog_card_top_card {
+
+            .blog_card_top_card_text {
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                padding: 30px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        
+                p {
+                    color: rgb(255, 255, 255);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    margin-top: 10px;
+                }
+
+                .text_center {
+                    @include flex-full-center();
+                }
+        
+                h4 {
+                    width: 73px;
+                    height: 37px;
+                    @include flex-full-center();
+                    color: rgb(255, 255, 255);
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 23px;
+                    border: 1px solid rgb(255, 255, 255);
+                }
+            }
+        }
+
+    }
+
+
 }
 // cases_blog
 
