@@ -69,6 +69,62 @@
 
 @media only screen and (max-width: 1100px) {
     
+
+    .seo_tarif {
+        margin-bottom: 0;
+
+        .main_container {
+            border: none;
+        }
+
+        .seo_tarif_title {
+            flex-direction: column;
+            padding: 40px 0 30px 0;
+            gap: 10px;
+
+            h4 {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+            }
+        }
+
+        .seo_tarif_in {
+            padding-bottom: 40px;
+            .seo_tarif_block {
+                padding-left: 60px;
+
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    b {
+                        display: block;
+                    }
+                }
+
+                del {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                }
+
+                h6 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+            }
+        }
+
+    }
+
     .contact_home {
 
         .contact_title {
@@ -1385,6 +1441,17 @@
                 bottom: 0;
                 left: 0;
                 z-index: 1;
+            }
+        }
+    }
+
+    .seo_tarif {
+        .seo_tarif_in {
+            flex-direction: column;
+            .seo_tarif_block {
+                border: 1px solid red;
+                width: calc(100%);
+                display: flex;
             }
         }
     }

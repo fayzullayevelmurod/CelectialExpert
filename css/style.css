@@ -1897,6 +1897,80 @@ header.active {
   }
 }
 
+.seo_tarif {
+  margin-bottom: 100px;
+}
+.seo_tarif .main_container {
+  border: 1px solid rgb(217, 217, 217);
+  background: rgb(245, 245, 245);
+}
+.seo_tarif .seo_tarif_title {
+  padding: 60px 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.seo_tarif .seo_tarif_title h4 {
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+.seo_tarif .seo_tarif_title a {
+  white-space: nowrap;
+  color: rgb(54, 61, 68);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  text-decoration-line: underline !important;
+}
+.seo_tarif .seo_tarif_in {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 56px;
+}
+.seo_tarif .seo_tarif_in .seo_tarif_block {
+  padding-left: 80px;
+  width: calc(33.3333333333% - 14px);
+  border-left: 1px solid rgb(217, 217, 217);
+}
+.seo_tarif .seo_tarif_in .first_tarif_block {
+  border-left: none;
+  padding-left: 0;
+}
+.seo_tarif .seo_tarif_in p {
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.seo_tarif .seo_tarif_in del {
+  display: block;
+  margin-top: 10px;
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+.seo_tarif .seo_tarif_in h6 {
+  color: rgb(26, 60, 85);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+}
+.seo_tarif .seo_tarif_in .main_number {
+  margin-bottom: 20px;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
@@ -2073,6 +2147,51 @@ footer .footer_bottom p span {
   }
 }
 @media only screen and (max-width: 1100px) {
+  .seo_tarif {
+    margin-bottom: 0;
+  }
+  .seo_tarif .main_container {
+    border: none;
+  }
+  .seo_tarif .seo_tarif_title {
+    flex-direction: column;
+    padding: 40px 0 30px 0;
+    gap: 10px;
+  }
+  .seo_tarif .seo_tarif_title h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .seo_tarif .seo_tarif_title a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+  .seo_tarif .seo_tarif_in {
+    padding-bottom: 40px;
+  }
+  .seo_tarif .seo_tarif_in .seo_tarif_block {
+    padding-left: 60px;
+  }
+  .seo_tarif .seo_tarif_in .seo_tarif_block p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .seo_tarif .seo_tarif_in .seo_tarif_block p b {
+    display: block;
+  }
+  .seo_tarif .seo_tarif_in .seo_tarif_block del {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .seo_tarif .seo_tarif_in .seo_tarif_block h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
   .contact_home .contact_title {
     font-size: 30px;
     font-weight: 400;
@@ -3054,6 +3173,14 @@ footer .footer_bottom p span {
     bottom: 0;
     left: 0;
     z-index: 1;
+  }
+  .seo_tarif .seo_tarif_in {
+    flex-direction: column;
+  }
+  .seo_tarif .seo_tarif_in .seo_tarif_block {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
   }
 }
 @media only screen and (max-width: 650px) {

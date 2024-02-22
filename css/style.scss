@@ -2417,6 +2417,91 @@ header.active {
 }
 // work_seo
 
+// seo_tarif
+.seo_tarif {
+    margin-bottom: 100px;
+    .main_container {
+        border: 1px solid rgb(217, 217, 217);
+        background: rgb(245, 245, 245);
+    }
+
+    .seo_tarif_title {
+        padding: 60px 0 40px 0;
+        @include flex-center();
+        justify-content: space-between;
+
+        h4 {
+            color: rgb(54, 61, 68);
+            font-family: $font-Montserrat;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 37px;
+            text-transform: uppercase;
+        }
+
+        a {
+            white-space: nowrap;
+            color: rgb(54, 61, 68);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+            text-decoration-line: underline !important;
+        }
+    }
+
+    .seo_tarif_in {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-bottom: 56px;
+
+        .seo_tarif_block {
+            padding-left: 80px;
+            width: calc(100% / 3 - 14px);
+            border-left: 1px solid rgb(217, 217, 217);
+        }
+
+        .first_tarif_block {
+            border-left: none;
+            padding-left: 0;
+        }
+
+        p {
+            color: rgb(54, 61, 68);
+            font-family: $font-Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+
+        del {
+            display: block;
+            margin-top: 10px;
+            color: rgb(54, 61, 68);
+            font-family: $font-Montserrat;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration-line: line-through;
+            opacity: 0.5;
+        }
+
+        h6 {
+            color: rgb(26, 60, 85);
+            font-family: $font-Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+        }
+
+        .main_number {
+            margin-bottom: 20px;
+        }
+    }
+}
+// seo_tarif
+
 // footer
 footer {
     background: rgb(26, 60, 85);
