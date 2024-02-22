@@ -2106,6 +2106,58 @@ header.active {
   opacity: 0.5;
 }
 
+.cases_blog .main_title_under {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cases_blog_cards {
+  margin-bottom: 100px;
+}
+.cases_blog_cards .blog_card_top_in {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.cases_blog_cards .card_one {
+  grid-area: 1/1/2/3;
+}
+.cases_blog_cards .card_two {
+  grid-area: 1/3/2/5;
+}
+.cases_blog_cards .card_three {
+  grid-area: 2/1/3/4;
+}
+.cases_blog_cards .card_four {
+  grid-area: 2/4/3/5;
+}
+.cases_blog_cards .card_five {
+  grid-area: 3/1/4/2;
+}
+.cases_blog_cards .card_six {
+  grid-area: 3/2/4/5;
+}
+.cases_blog_cards .card_seven {
+  grid-area: 4/1/5/3;
+}
+.cases_blog_cards .card_eight {
+  grid-area: 4/3/5/5;
+}
+.cases_blog_cards .card_nine {
+  grid-area: 5/1/6/4;
+}
+.cases_blog_cards .card_ten {
+  grid-area: 5/4/6/5;
+}
+.cases_blog_cards .card_eleven {
+  grid-area: 6/1/7/2;
+}
+.cases_blog_cards .card_twelev {
+  grid-area: 6/2/7/5;
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
