@@ -81,6 +81,7 @@
             flex-direction: column;
             padding: 40px 0 30px 0;
             gap: 10px;
+            text-align: center;
 
             h4 {
                 font-size: 20px;
@@ -910,6 +911,61 @@
     .seo_partner {
         margin-top: 40px;
     }
+
+    .seo_home {
+
+        .home_text {
+            .main_title_coral {
+                display: block;
+            }
+
+            h6 {
+                max-width: 308px;
+            }
+        }
+        .home_user_desktop {
+            width: 319px;
+            bottom: -55px;
+            right: -15px;
+        }
+    }
+
+    .seo_under {
+        margin-top: 0;
+
+        .services_seo_img {
+            width: 441px;
+            left: -125px;
+            bottom: 0;
+        }
+
+        .services_seo_text {
+            max-width: 385px;
+
+            .main_title_under {
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 32px;
+                margin-bottom: 10px;
+
+                .main_title_under_coral {
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 32px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+
+            .main_btn_black {
+                margin-top: 20px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 743px) {
@@ -1447,14 +1503,55 @@
 
     .seo_tarif {
         .seo_tarif_in {
+            gap: 0;
             flex-direction: column;
+            padding-bottom: 53px;
+            
+
             .seo_tarif_block {
-                border: 1px solid red;
+                padding: 15px 8px 15px 0;
+                border-left: none;
+                border-bottom: 1px solid rgb(217, 217, 217);;
                 width: calc(100%);
                 display: flex;
+                justify-content: space-between;
+                gap: 40px;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                del {
+                    margin-top: 0;
+                }
+
+                h6 {
+                    margin-bottom: 0;
+                }
+            }
+
+            .end_tarif_block {
+                border-bottom: none;
             }
         }
     }
+
+    .seo_under {
+
+        .services_seo_text {
+            padding-bottom: 295px;
+        }
+
+        .main_container {
+            padding: 40px 20px 0 20px;
+            .services_seo_img {
+                width: 370px;
+                transform: rotate(0deg);
+                bottom: -60px;
+                left: 14px;
+            }
+        }
+    } 
 }
 
 @media only screen and (max-width: 650px) {
@@ -1663,6 +1760,14 @@
             letter-spacing: 0%;
             padding: 10px 12px !important;
             margin: 26px 0 76px 0 !important;
+        }
+    }
+
+    .seo_home {
+        .home_text {
+            h6 {
+                margin: 0 auto 20px auto;
+            }
         }
     }
 

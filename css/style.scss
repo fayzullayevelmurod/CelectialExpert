@@ -2502,6 +2502,27 @@ header.active {
 }
 // seo_tarif
 
+// seo_home
+.seo_home {
+    .home_user_desktop {
+        width: auto;
+        bottom: -125px;
+    }
+}
+// seo_home
+
+// seo_under
+.seo_under {
+    margin-top: 100px;
+    
+    .services_seo_img {
+        left: 0;
+        bottom: 0;
+        width: auto;
+    }
+}
+// seo_under
+
 // footer
 footer {
     background: rgb(26, 60, 85);
