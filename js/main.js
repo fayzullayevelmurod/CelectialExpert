@@ -19,8 +19,8 @@ mobile_dropdown_btn.addEventListener('click', () => {
 })
 
 
+// services
 try {
-    // services
 var init = false;
 var swiper;
 function servicesSwiper() {
@@ -46,10 +46,42 @@ function servicesSwiper() {
     }
 }
 
-// services
 } catch(err) {
     console.log(err);
 }
+// services
+
+// seo_workSwiper
+try {
+var init = false;
+var swiper;
+function servicesSwiper() {
+    if (window.innerWidth <= 743) {
+        if (!init) {
+            init = true;
+            swiper = new Swiper(".seo_workSwiper", {
+                slidesPerView: 1.50,
+                spaceBetween: 10,
+                breakpoints: {
+                    743: {
+                        slidesPerView: 1.50,
+                    }
+                },
+                pagination: {
+                    el: ".seo_workswiper-pagination",
+                },
+            });
+        }
+    } else if (init) {
+        swiper.destroy();
+        init = false;
+    }
+}
+
+} catch(err) {
+    console.log(err);
+}
+// seo_workSwiper
 
 try {
     // services

@@ -2332,6 +2332,91 @@ header.active {
 }
 // seo_partner
 
+// seo_services
+.seo_services {
+    .main_title_under {
+        .main_title_under_coral {
+            display: block;
+        }
+    }
+}
+// seo_services
+
+// work_seo
+.work_seo {
+
+    .main_title_under {
+        text-align: center
+    }
+
+    .work_btns {
+        @include flex-full-center();
+        gap: 30px;
+        margin-bottom: 40px;
+
+        .main_btn_black {
+            padding: 15px 45px;
+        }
+
+        .disabled {
+            color: rgb(217, 217, 217);
+            border: 1px solid rgb(217, 217, 217);
+        }
+    }
+    
+    .seo_workSwiper {
+        overflow: visible;
+
+        .swiper-wrapper {
+            @media only screen and (min-width: 993px) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+            
+        }
+        
+        .swiper-slide {
+            @media only screen and (min-width: 993px) {
+                width: calc(100% / 3 - 20px);
+                display: flex;
+                height: auto;
+            }
+
+            .work_card {
+                width: 100%;
+            }
+        }
+
+        .seo_workswiper-pagination {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 12px;
+                @include transition();
+                margin: 0;
+            }
+
+            .swiper-pagination-bullet-active {
+                width: 24px;
+                height: 12px;
+                border-radius: 35px;
+                background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%,rgb(162, 139, 69) -6.259%,rgb(201, 174, 95) 9.706%,rgb(234, 212, 168) 44.281%,rgb(216, 177, 84) 86.033%,rgb(140, 109, 59) 108.214%);
+            }
+
+            @media only screen and (min-width: 774px) {
+                display: none;
+
+            }
+        }
+    }     
+}
+// work_seo
+
 // footer
 footer {
     background: rgb(26, 60, 85);

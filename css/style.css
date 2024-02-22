@@ -1832,6 +1832,71 @@ header.active {
   margin-top: 80px;
 }
 
+.seo_services .main_title_under .main_title_under_coral {
+  display: block;
+}
+
+.work_seo .main_title_under {
+  text-align: center;
+}
+.work_seo .work_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.work_seo .work_btns .main_btn_black {
+  padding: 15px 45px;
+}
+.work_seo .work_btns .disabled {
+  color: rgb(217, 217, 217);
+  border: 1px solid rgb(217, 217, 217);
+}
+.work_seo .seo_workSwiper {
+  overflow: visible;
+}
+@media only screen and (min-width: 993px) {
+  .work_seo .seo_workSwiper .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .work_seo .seo_workSwiper .swiper-slide {
+    width: calc(33.3333333333% - 20px);
+    display: flex;
+    height: auto;
+  }
+}
+.work_seo .seo_workSwiper .swiper-slide .work_card {
+  width: 100%;
+}
+.work_seo .seo_workSwiper .seo_workswiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.work_seo .seo_workSwiper .seo_workswiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  transition: 0.2s ease;
+  margin: 0;
+}
+.work_seo .seo_workSwiper .seo_workswiper-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 12px;
+  border-radius: 35px;
+  background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%, rgb(162, 139, 69) -6.259%, rgb(201, 174, 95) 9.706%, rgb(234, 212, 168) 44.281%, rgb(216, 177, 84) 86.033%, rgb(140, 109, 59) 108.214%);
+}
+@media only screen and (min-width: 774px) {
+  .work_seo .seo_workSwiper .seo_workswiper-pagination {
+    display: none;
+  }
+}
+
 footer {
   background: rgb(26, 60, 85);
 }
