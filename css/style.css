@@ -1182,6 +1182,7 @@ header.active {
 
 .order_services {
   margin-bottom: 100px;
+  overflow: visible;
 }
 .order_services .main_title_under {
   text-align: center;
@@ -1195,6 +1196,20 @@ header.active {
   flex-wrap: wrap;
   align-items: stretch;
   gap: 30px;
+}
+@media only screen and (min-width: 993px) {
+  .order_services .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .order_services .swiper-slide {
+    width: calc(33.3333333333% - 20px);
+    display: flex;
+    height: auto;
+  }
 }
 .order_services .order_services_card {
   width: calc(33.3333333333% - 20px);
@@ -1712,6 +1727,109 @@ header.active {
 }
 .about_sales .about_sales_media_img {
   display: none;
+}
+
+.services {
+  margin: 100px 0;
+}
+.services .main_title_under {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.services .seo_servicesSwiper {
+  overflow: visible;
+}
+.services .seo_servicesSwiper .seo_services-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.services .seo_servicesSwiper .seo_services-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  transition: 0.2s ease;
+  margin: 0;
+}
+.services .seo_servicesSwiper .seo_services-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 12px;
+  border-radius: 35px;
+  background: linear-gradient(-31.11deg, rgb(149, 128, 61) -17.041%, rgb(162, 139, 69) -6.259%, rgb(201, 174, 95) 9.706%, rgb(234, 212, 168) 44.281%, rgb(216, 177, 84) 86.033%, rgb(140, 109, 59) 108.214%);
+}
+.services .seo_servicesSwiper .services_card {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.services .seo_servicesSwiper .services_card svg path {
+  transition: 0.2s ease;
+}
+.services .seo_servicesSwiper .services_card h6 {
+  color: rgb(54, 61, 68);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+.services .seo_servicesSwiper .services_card ul {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.services .seo_servicesSwiper .services_card ul li {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  opacity: 0.5;
+}
+.services .seo_servicesSwiper .card_one:hover svg path:nth-child(1) {
+  fill: #3BD1A2;
+}
+.services .seo_servicesSwiper .card_one:hover svg path:nth-child(2) {
+  fill: #CCE3DA;
+}
+.services .seo_servicesSwiper .card_two:hover svg path:nth-child(1) {
+  fill: #FFD100;
+}
+.services .seo_servicesSwiper .card_two:hover svg path:nth-child(2) {
+  fill: #FFD100;
+}
+.services .seo_servicesSwiper .card_two:hover svg path:nth-child(3) {
+  fill: #EDE9C6;
+}
+.services .seo_servicesSwiper .card_three:hover svg path:nth-child(1) {
+  fill: #FC6F00;
+}
+.services .seo_servicesSwiper .card_three:hover svg path:nth-child(2) {
+  fill: #EDE9C6;
+}
+.services .seo_servicesSwiper .card_four:hover svg path:nth-child(1) {
+  fill: #ED4A36;
+}
+.services .seo_servicesSwiper .card_four:hover svg path:nth-child(2) {
+  fill: #EFD2CF;
+}
+.services .seo_servicesSwiper .card_five:hover svg path:nth-child(1) {
+  fill: #C6DAE8;
+}
+.services .seo_servicesSwiper .card_five:hover svg path:nth-child(2) {
+  fill: #525CFF;
+}
+.services .seo_servicesSwiper .card_six:hover svg path:nth-child(1) {
+  fill: #B847FF;
+}
+.services .seo_servicesSwiper .card_six:hover svg path:nth-child(2) {
+  fill: #E4C0EE;
+}
+
+.seo_partner {
+  margin-top: 80px;
 }
 
 footer {
@@ -2456,6 +2574,9 @@ footer .footer_bottom p span {
   }
   .about_sales .about_sales_img img {
     right: -95px;
+  }
+  .seo_partner {
+    margin-top: 40px;
   }
 }
 @media only screen and (max-width: 743px) {

@@ -116,6 +116,30 @@ try {
 }
 
 try {
+    var seo_servicesSwiper = new Swiper(".seo_servicesSwiper", {
+        pagination: {
+          el: ".seo_services-pagination",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.25,
+                spaceBetween: 10,
+            },
+            650: {
+                slidesPerView: 2.25,
+                spaceBetween: 10,
+            },
+            993: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+} catch(err) {
+    console.log(err);
+}
+
+try {
     var workSwiper = new Swiper(".workSwiper", {
         pagination: {
           el: ".workswiper-pagination",
