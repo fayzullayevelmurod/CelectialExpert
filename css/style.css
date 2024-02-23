@@ -2111,15 +2111,48 @@ header.active {
   margin-bottom: 40px;
 }
 
-.cases_blog_cards {
-  margin-bottom: 100px;
-}
 .cases_blog_cards .blog_card_top_in {
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+}
+.cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-top: 10px;
+}
+.cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text .text_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text h4 {
+  width: 73px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  border: 1px solid rgb(255, 255, 255);
 }
 .cases_blog_cards .card_one {
   grid-area: 1/1/2/3;
@@ -2156,41 +2189,6 @@ header.active {
 }
 .cases_blog_cards .card_twelev {
   grid-area: 6/2/7/5;
-}
-.cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 30px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text p {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  margin-top: 10px;
-}
-.cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text .text_center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text h4 {
-  width: 73px;
-  height: 37px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23px;
-  border: 1px solid rgb(255, 255, 255);
 }
 
 footer {
@@ -3099,6 +3097,92 @@ footer .footer_bottom p span {
     font-weight: 400;
     line-height: 24px;
   }
+  .cases_blog_cards {
+    margin-bottom: 60px;
+  }
+  .cases_blog .main_title_under {
+    margin-bottom: 20px;
+  }
+  .cases_blog .blog_tabs {
+    gap: 20px;
+  }
+  .cases_blog .blog_tabs a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .cases_blog_cards .blog_card_top_in {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .cases_blog_cards .blog_card_top_in .blog_card_top_card {
+    height: 275px;
+  }
+  .cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text {
+    padding: 25px;
+  }
+  .cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text h6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 22px;
+  }
+  .cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    padding: 7px 8px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  .cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .cases_blog_cards .card_one {
+    grid-area: 1/1/2/2;
+  }
+  .cases_blog_cards .card_two {
+    grid-area: 1/2/2/3;
+  }
+  .cases_blog_cards .card_three {
+    grid-area: 2/1/3/3;
+  }
+  .cases_blog_cards .card_four {
+    grid-area: 3/1/4/2;
+  }
+  .cases_blog_cards .card_five {
+    grid-area: 3/2/4/3;
+  }
+  .cases_blog_cards .card_six {
+    grid-area: 4/1/5/3;
+  }
+  .cases_blog_cards .card_seven {
+    grid-area: 5/1/6/2;
+  }
+  .cases_blog_cards .card_eight {
+    grid-area: 5/2/6/3;
+  }
+  .cases_blog_cards .card_nine {
+    grid-area: 6/1/7/3;
+  }
+  .cases_blog_cards .card_ten {
+    grid-area: 7/1/8/2;
+  }
+  .cases_blog_cards .card_eleven {
+    grid-area: 7/2/8/3;
+  }
+  .cases_blog_cards .card_twelev {
+    grid-area: 8/1/9/3;
+  }
 }
 @media only screen and (max-width: 743px) {
   .main_container {
@@ -3757,6 +3841,67 @@ footer .footer_bottom p span {
   .blog_cards .main_container .blog_card {
     width: calc(50% - 5px);
   }
+  .cases_blog .blog_tabs {
+    flex-wrap: wrap;
+  }
+  .cases_blog .blog_tabs a {
+    flex: auto;
+    flex-basis: 90px;
+    max-width: 90px;
+    width: 90px;
+    height: 40px;
+  }
+  .cases_blog_cards .blog_card_top_in {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 60px;
+  }
+  .cases_blog_cards .blog_card_top_in .blog_card_top_card .blog_card_top_card_text {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+  }
+  .cases_blog_cards .card_one {
+    grid-area: 1/1/2/2;
+  }
+  .cases_blog_cards .card_two {
+    grid-area: 2/1/3/2;
+  }
+  .cases_blog_cards .card_three {
+    grid-area: 3/1/4/2;
+  }
+  .cases_blog_cards .card_four {
+    grid-area: 4/1/5/2;
+  }
+  .cases_blog_cards .card_five {
+    grid-area: 5/1/6/2;
+  }
+  .cases_blog_cards .card_six {
+    grid-area: 6/1/7/2;
+  }
+  .cases_blog_cards .card_seven {
+    grid-area: 7/1/8/2;
+  }
+  .cases_blog_cards .card_eight {
+    grid-area: 8/1/9/2;
+  }
+  .cases_blog_cards .card_nine {
+    grid-area: 9/1/10/2;
+  }
+  .cases_blog_cards .card_ten {
+    grid-area: 10/1/11/2;
+  }
+  .cases_blog_cards .card_eleven {
+    grid-area: 11/1/12/2;
+  }
+  .cases_blog_cards .card_twelev {
+    grid-area: 12/1/13/2;
+  }
   footer .footer_top {
     padding: 20px 0 40px 0;
   }
@@ -3825,6 +3970,16 @@ footer .footer_bottom p span {
     background: rgb(26, 60, 85);
     height: 100%;
     width: 100%;
+  }
+  .cases_blog .blog_tabs {
+    flex-wrap: wrap;
+  }
+  .cases_blog .blog_tabs a {
+    flex: auto;
+    flex-basis: 90px;
+    max-width: 100%;
+    width: 90px;
+    height: 40px;
   }
   footer .footer_bottom .footer_text p {
     font-size: 12px;
