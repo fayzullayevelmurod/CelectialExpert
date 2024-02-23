@@ -19,6 +19,8 @@ mobile_dropdown_btn.addEventListener('click', () => {
 })
 
 
+
+
 // services
 try {
 var init = false;
@@ -243,6 +245,14 @@ try {
 } catch(err) {
     console.log(err);
 }
+
+
+var process_slider = new Swiper(".process_slider", {
+    navigation: {
+      nextEl: ".process_slider-button-next",
+      prevEl: ".process_slider-button-prev",
+    },
+});
 
 const items = document.querySelectorAll('.accordion button');
 

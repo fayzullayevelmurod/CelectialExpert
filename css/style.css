@@ -651,6 +651,7 @@ header.active {
   background-color: #FFF1E6;
 }
 .cases .casesSwiper .cases_card .cases_card_hover {
+  overflow: hidden;
   transition: 0.2s ease;
   opacity: 0;
   z-index: -1;
@@ -883,6 +884,7 @@ header.active {
 }
 .price_services .price_services_card:hover {
   background: rgb(26, 60, 85);
+  transform: scale(1.05);
 }
 .price_services .price_services_card:hover .price_services_head a {
   border: 1px solid rgb(255, 255, 255);
@@ -2257,6 +2259,75 @@ header.active {
 }
 .cases_blog_cards .card_twelev {
   grid-area: 6/2/7/5;
+}
+
+.process_slider .main_container {
+  padding: 100px 100px 80px 100px;
+  background: rgb(245, 245, 245);
+}
+.process_slider .main_title_under {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.process_slider h4 {
+  max-width: 800px;
+  margin: 0 auto 45px auto;
+  text-align: center;
+  color: rgb(54, 61, 68);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+.process_slider .progress_block {
+  margin-bottom: 50px;
+  background: rgb(217, 217, 217);
+  height: 2px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.process_slider .progress_block .circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgb(217, 217, 217);
+}
+.process_slider .process_slider .process_slider_card {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.process_slider .process_slider .process_slider_card .process_slider_card_left h5 {
+  color: rgb(54, 61, 68);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.process_slider .process_slider .process_slider_card .process_slider_card_left h6 {
+  color: rgb(54, 61, 68);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.process_slider .process_slider .process_slider_card .process_slider_card_left p {
+  color: rgb(54, 61, 68);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 501px;
+}
+.process_slider .process_slider .process_slider_btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.process_slider .process_slider .process_slider_btns button {
+  cursor: pointer;
 }
 
 footer {
@@ -3969,6 +4040,22 @@ footer .footer_bottom p span {
   }
   .cases_blog_cards .card_twelev {
     grid-area: 12/1/13/2;
+  }
+  .cases .casesSwiper .cases_card .cases_card_hover {
+    padding: 25px;
+  }
+  .cases .casesSwiper .cases_card .cases_card_hover h6 {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+  .cases .casesSwiper .cases_card .cases_card_hover p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .cases .casesSwiper .cases_card .cases_card_hover a {
+    font-size: 13px;
   }
   footer .footer_top {
     padding: 20px 0 40px 0;

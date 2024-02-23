@@ -825,6 +825,7 @@ header.active {
             }
 
             .cases_card_hover {
+                overflow: hidden;
                 @include transition();
                 opacity: 0;
                 z-index: -1;
@@ -1097,6 +1098,7 @@ header.active {
 
         &:hover {
             background: rgb(26, 60, 85);
+            transform: scale(1.05);
 
             .price_services_head {
                 a {
@@ -2806,6 +2808,91 @@ header.active {
 }
 // cases_blog
 
+// process_slider
+.process_slider {
+    .main_container {
+        padding: 100px 100px 80px 100px;
+        background: rgb(245, 245, 245);
+    }
+    .main_title_under {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        max-width: 800px;
+        margin: 0 auto 45px auto;
+        text-align: center;
+        color: rgb(54, 61, 68);
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 37px;
+        text-transform: uppercase;
+    }
+
+    .progress_block {
+        margin-bottom: 50px;
+        background: rgb(217, 217, 217);
+        height: 2px;
+        opacity: 0.5;
+        @include flex-center();
+        justify-content: space-between;
+
+        .circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgb(217, 217, 217);
+        }
+    }
+
+    .process_slider {
+        .process_slider_card {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+    
+            .process_slider_card_left {
+
+                h5 {
+                    color: rgb(54, 61, 68);
+                    font-family: $font-Montserrat;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+
+                h6 {
+                    color: rgb(54, 61, 68);
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    color: rgb(54, 61, 68);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    max-width: 501px;
+                }
+            }
+        }
+
+        .process_slider_btns {
+            @include flex-center();
+            gap: 30px;  
+
+            button {
+                cursor: pointer;
+            }
+        }
+    }
+}
+// process_slider
+
 // footer
 footer {
     background: rgb(26, 60, 85);
@@ -2953,8 +3040,6 @@ footer {
     }
 }
 // footer
-
-
 
 
 

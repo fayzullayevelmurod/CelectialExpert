@@ -2032,6 +2032,32 @@
         
     }
 
+    .cases {
+        .casesSwiper {
+            .cases_card {
+                .cases_card_hover {
+                    padding: 25px;
+
+                    h6 {
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-bottom: 10px;
+                    }
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
     footer {
 
         .footer_top {
