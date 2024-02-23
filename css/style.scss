@@ -923,6 +923,83 @@ header.active {
             @include flex-start();
             justify-content: space-between;
 
+            // cases_card_hover
+
+            .card_one {
+                background-color: #EAFBF1;
+            }
+
+            .card_two {
+                background-color: #FFFBF0;
+            }
+
+            .card_three {
+                background-color: #FFF1E6;
+            }
+
+            .card_four {
+                background-color: #FEEDEB;
+            }
+
+            .card_five {
+                background-color: #EAF7FD;
+            }
+
+            .card_six {
+                background-color: #F0EAFA;
+            }
+            .card_seven {
+                background-color: #EAFBF1;
+            }
+            .card_eight {
+                background-color: #FFFBF0;
+            }
+            .card_nine {
+                background-color: #FFF1E6;
+            }
+
+            .cases_card_hover {
+                overflow: hidden;
+                @include transition();
+                opacity: 0;
+                z-index: -1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h6 {
+                    color: rgb(54, 61, 68);
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-top: 5px;
+                    color: rgb(54, 61, 68);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                }
+                
+                a {
+                    color: rgb(54, 61, 68);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    text-decoration-line: underline !important;
+                    opacity: 0.5;
+                }
+            }
+            // cases_card_hover
+
             img {
                 width: 100%;
             }
@@ -966,6 +1043,14 @@ header.active {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 19px;
+                }
+            }
+
+            &:hover {
+                .cases_card_hover {
+                    opacity: 1;
+                    z-index: 2;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -1147,6 +1232,7 @@ header.active {
 
         &:hover {
             background: rgb(26, 60, 85);
+            transform: scale(1.05);
 
             .price_services_head {
                 a {
@@ -2907,31 +2993,154 @@ header.active {
     }
 }
 
-.cases_blog_cards {
-    margin-bottom: 100px;
+.cases_blog_cards { 
+        .blog_card_top_in {
+            margin-bottom: 100px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+
+            .blog_card_top_card {
+                .blog_card_top_card_text {
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    padding: 30px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+            
+                    p {
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19px;
+                        margin-top: 10px;
+                    }
     
-    .blog_card_top_in {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
-    }
+                    .text_center {
+                        @include flex-full-center();
+                    }
+            
+                    h4 {
+                        width: 73px;
+                        height: 37px;
+                        @include flex-full-center();
+                        color: rgb(255, 255, 255);
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 23px;
+                        border: 1px solid rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+        
+        .card_one { grid-area: 1 / 1 / 2 / 3; }
+        .card_two { grid-area: 1 / 3 / 2 / 5; }
+        .card_three { grid-area: 2 / 1 / 3 / 4; }
+        .card_four { grid-area: 2 / 4 / 3 / 5; }
+        .card_five { grid-area: 3 / 1 / 4 / 2; }
+        .card_six { grid-area: 3 / 2 / 4 / 5; }
+        .card_seven { grid-area: 4 / 1 / 5 / 3; }
+        .card_eight { grid-area: 4 / 3 / 5 / 5; }
+        .card_nine { grid-area: 5 / 1 / 6 / 4; }
+        .card_ten { grid-area: 5 / 4 / 6 / 5; }
+        .card_eleven { grid-area: 6 / 1 / 7 / 2; }
+        .card_twelev { grid-area: 6 / 2 / 7 / 5; }
     
-    .card_one { grid-area: 1 / 1 / 2 / 3; }
-    .card_two { grid-area: 1 / 3 / 2 / 5; }
-    .card_three { grid-area: 2 / 1 / 3 / 4; }
-    .card_four { grid-area: 2 / 4 / 3 / 5; }
-    .card_five { grid-area: 3 / 1 / 4 / 2; }
-    .card_six { grid-area: 3 / 2 / 4 / 5; }
-    .card_seven { grid-area: 4 / 1 / 5 / 3; }
-    .card_eight { grid-area: 4 / 3 / 5 / 5; }
-    .card_nine { grid-area: 5 / 1 / 6 / 4; }
-    .card_ten { grid-area: 5 / 4 / 6 / 5; }
-    .card_eleven { grid-area: 6 / 1 / 7 / 2; }
-    .card_twelev { grid-area: 6 / 2 / 7 / 5; }
+    
 }
 // cases_blog
+
+// process_slider
+.process_slider {
+    .main_container {
+        padding: 100px 100px 80px 100px;
+        background: rgb(245, 245, 245);
+    }
+    .main_title_under {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        max-width: 800px;
+        margin: 0 auto 45px auto;
+        text-align: center;
+        color: rgb(54, 61, 68);
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 37px;
+        text-transform: uppercase;
+    }
+
+    .progress_block {
+        margin-bottom: 50px;
+        background: rgb(217, 217, 217);
+        height: 2px;
+        opacity: 0.5;
+        @include flex-center();
+        justify-content: space-between;
+
+        .circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgb(217, 217, 217);
+        }
+    }
+
+    .process_slider {
+        .process_slider_card {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+    
+            .process_slider_card_left {
+
+                h5 {
+                    color: rgb(54, 61, 68);
+                    font-family: $font-Montserrat;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+
+                h6 {
+                    color: rgb(54, 61, 68);
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    color: rgb(54, 61, 68);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    max-width: 501px;
+                }
+            }
+        }
+
+        .process_slider_btns {
+            @include flex-center();
+            gap: 30px;  
+
+            button {
+                cursor: pointer;
+            }
+        }
+    }
+}
+// process_slider
 
 // footer
 footer {
@@ -3080,8 +3289,6 @@ footer {
     }
 }
 // footer
-
-
 
 
 
