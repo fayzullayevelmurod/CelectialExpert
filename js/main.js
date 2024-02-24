@@ -18,6 +18,11 @@ mobile_dropdown_btn.addEventListener('click', () => {
     mobile_dropdown_link.classList.toggle('active')
 })
 
+try {
+    AOS.init();
+} catch (err) {
+    console.log(err);
+}
 
 
 

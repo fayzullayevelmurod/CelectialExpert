@@ -72,6 +72,11 @@ body {
     font-style: normal;
 }
 
+body[data-aos-duration='4000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='4000'] {
+  transition-duration: 2000ms;
+}
+
 input {
     outline: none;
 }
@@ -2170,6 +2175,11 @@ header.active {
             font-size: 60px;
             font-weight: 700;
             line-height: 73px;
+        }
+
+        h6.counter {
+            animation-duration: 1s;
+            animation-delay: 0s;
         }
 
         p {
