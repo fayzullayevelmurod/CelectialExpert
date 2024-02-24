@@ -18,6 +18,83 @@ mobile_dropdown_btn.addEventListener('click', () => {
     mobile_dropdown_link.classList.toggle('active')
 })
 
+let show_btn = document.querySelector('.prices_page .show_btn');
+let blog_tabs = document.querySelector('.prices_page .blog_tabs');
+
+if (show_btn) {
+    show_btn.onclick = () => {
+        blog_tabs.classList.toggle('active');
+    }
+
+    let tabs_items = document.querySelectorAll('.prices_page .blog_tabs a');
+    let text = document.querySelector('.prices_page .show_btn span')
+    tabs_items.forEach(item => {
+        item.onclick = () => {
+            blog_tabs.classList.remove('active');
+            text.textContent = item.textContent;
+            tabs_items.forEach(el => {
+                el.classList.remove('active');
+            })
+            item.classList.add('active');
+        }
+    })
+}
+
+let auth_modal = document.querySelector('.auth_modal')
+let auth_modal_close = document.querySelector('.auth_modal__close');
+let form_control = document.querySelectorAll('.auth_modal form .form_control');
+let form_btn = document.querySelector('.auth_modal form button[type="submit"]');
+let auth_modal_slider = new Swiper('.auth_modal .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 0,
+    allowTouchMove: false,
+})
+
+if (auth_modal) {
+    form_btn.onclick = e => {
+        e.preventDefault();
+        t = true;
+
+        form_control.forEach(el => {
+            input = el.querySelector('input');
+            err_text = el.querySelector('p');
+
+            if (input.value) {
+                el.classList.remove('form_control__error');
+            } else {
+                el.classList.add('form_control__error');
+                t = false;
+            }
+        })
+
+        if (t) {
+            auth_modal_slider.slideTo(1);
+        }
+    }
+
+    form_control.forEach(el => {
+        input = el.querySelector('input')
+        input.oninput = () => {
+            el.classList.remove('form_control__error')
+        }
+    })
+
+    auth_modal_close.onclick = () => {
+        auth_modal.classList.remove('active')
+    }
+}
+
+let auth_modal_open = document.querySelectorAll('.auth_modal__open');
+if (auth_modal_open.length) {
+    auth_modal_open.forEach(btn => {
+        btn.onclick = e => {
+            e.preventDefault();
+            auth_modal.classList.add('active');
+        }
+    })
+}
+
 try {
     AOS.init();
 } catch (err) {
