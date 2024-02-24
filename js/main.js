@@ -329,12 +329,16 @@ try {
 }
 
 
-var process_slider = new Swiper(".process_slider", {
-    navigation: {
-      nextEl: ".process_slider-button-next",
-      prevEl: ".process_slider-button-prev",
-    },
-});
+try {
+    var process_slider = new Swiper(".process_slider", {
+        navigation: {
+          nextEl: ".process_slider-button-next",
+          prevEl: ".process_slider-button-prev",
+        },
+    });
+} catch(err) {
+    console.log(err);
+}
 
 const items = document.querySelectorAll('.accordion button');
 

@@ -2474,15 +2474,18 @@ header.active {
   grid-area: 6/2/7/5;
 }
 
-.process_slider .main_container {
+.process_slider_wrapper {
+  margin-bottom: 100px;
+}
+.process_slider_wrapper .main_container {
   padding: 100px 100px 80px 100px;
   background: rgb(245, 245, 245);
 }
-.process_slider .main_title_under {
+.process_slider_wrapper .main_title_under {
   text-align: center;
   margin-bottom: 30px;
 }
-.process_slider h4 {
+.process_slider_wrapper h4 {
   max-width: 800px;
   margin: 0 auto 45px auto;
   text-align: center;
@@ -2492,7 +2495,7 @@ header.active {
   line-height: 37px;
   text-transform: uppercase;
 }
-.process_slider .progress_block {
+.process_slider_wrapper .progress_block {
   margin-bottom: 50px;
   background: rgb(217, 217, 217);
   height: 2px;
@@ -2501,18 +2504,18 @@ header.active {
   align-items: center;
   justify-content: space-between;
 }
-.process_slider .progress_block .circle {
+.process_slider_wrapper .progress_block .circle {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background: rgb(217, 217, 217);
 }
-.process_slider .process_slider .process_slider_card {
+.process_slider_wrapper .process_slider .process_slider_card {
   display: flex;
   justify-content: space-between;
   gap: 100px;
 }
-.process_slider .process_slider .process_slider_card .process_slider_card_left h5 {
+.process_slider_wrapper .process_slider .process_slider_card .process_slider_card_left h5 {
   color: rgb(54, 61, 68);
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
@@ -2520,26 +2523,26 @@ header.active {
   line-height: 22px;
   margin-bottom: 15px;
 }
-.process_slider .process_slider .process_slider_card .process_slider_card_left h6 {
+.process_slider_wrapper .process_slider .process_slider_card .process_slider_card_left h6 {
   color: rgb(54, 61, 68);
   font-size: 20px;
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 15px;
 }
-.process_slider .process_slider .process_slider_card .process_slider_card_left p {
+.process_slider_wrapper .process_slider .process_slider_card .process_slider_card_left p {
   color: rgb(54, 61, 68);
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   max-width: 501px;
 }
-.process_slider .process_slider .process_slider_btns {
+.process_slider_wrapper .process_slider .process_slider_btns {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.process_slider .process_slider .process_slider_btns button {
+.process_slider_wrapper .process_slider .process_slider_btns button {
   cursor: pointer;
 }
 
@@ -3551,6 +3554,48 @@ footer .footer_bottom p span {
   .cases_blog_cards .card_twelev {
     grid-area: 8/1/9/3;
   }
+  .process_slider_wrapper .main_container {
+    padding: 40px 60px;
+  }
+  .process_slider_wrapper .progress_block .circle {
+    width: 20px;
+    height: 20px;
+  }
+  .process_slider_wrapper .main_title_under {
+    margin-bottom: 20px;
+  }
+  .process_slider_wrapper h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card {
+    gap: 60px;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card .process_slider_card_left {
+    flex: 1;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card .process_slider_card_left h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card .process_slider_card_left h6 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card .process_slider_card_left p {
+    font-size: 14px;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card .process_slider_card_right {
+    flex: 1;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card .process_slider_card_right img {
+    max-width: 100%;
+  }
+  .process_slider_wrapper .process_slider_btns {
+    margin-top: 30px;
+  }
 }
 @media only screen and (max-width: 880px) {
   .price_services.price_page .main_container {
@@ -4029,6 +4074,19 @@ footer .footer_bottom p span {
     transform: rotate(0deg);
     bottom: -60px;
     left: 14px;
+  }
+  .process_slider_wrapper .main_container {
+    padding: 20px;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card {
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card .process_slider_card_right img {
+    width: 100%;
+  }
+  .process_slider_wrapper .process_slider .process_slider_card .process_slider_card_left p {
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 650px) {
