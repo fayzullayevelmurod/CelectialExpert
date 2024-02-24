@@ -1837,6 +1837,27 @@
             padding: 20px;
         }
 
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        
+        .progress_block {
+            .progress_block_in {
+                height: 4px;
+                top: -1px;
+            }
+            .circle {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+
+        .progress_block {
+            margin-bottom: 30px;
+        }
+
         .process_slider {
             .process_slider_card {
                 gap: 20px;

@@ -1,3 +1,5 @@
+AOS.init();
+
 let header_burger = document.querySelector('.header_burger');
 let mobile_menu = document.querySelector('.mobile_menu');
 let hidden = document.querySelector('.hidden');
@@ -93,12 +95,6 @@ if (auth_modal_open.length) {
             auth_modal.classList.add('active');
         }
     })
-}
-
-try {
-    AOS.init();
-} catch (err) {
-    console.log(err);
 }
 
 
@@ -355,3 +351,4 @@ function toggleAccordion() {
 }
 
 items.forEach((item) => item.addEventListener('click', toggleAccordion));
+

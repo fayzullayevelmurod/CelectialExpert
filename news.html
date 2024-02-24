@@ -7,6 +7,7 @@
     <!-- Swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css file -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- bootstrap -->
@@ -22,6 +23,46 @@
 <body class="hidden">
     <div class="wrapper">
 
+        <!-- Auth modal -->
+        <sectin class="auth_modal">
+            <div class="auth_modal__bg"></div>
+            <div class="auth_modal__content">
+                <button class="auth_modal__close">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L27 27M3 27L27 3" stroke="#363D44"/>
+                    </svg>
+                </button>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <form>
+                                <div class="title">Получите предложение по продвижению</div>
+                                <div class="form_control">
+                                    <input type="text" placeholder="Ваше имя">
+                                    <p>Данное поле должно быть заполнено</p>
+                                </div>
+                                <div class="form_control">
+                                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                                    <p>Данное поле должно быть заполнено</p>
+                                </div>
+                                <button class="main_btn_black" type="submit">Получить предложение</button>
+                                <p>Нажимая кнопку «Получить предложение», Вы принимаете условия <br> Пользовательского соглашения</p>
+                            </form>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="title">Спасибо за заявку!</div>
+                            <div class="description">Ваша заявка успешно отправлена. Мы свяжемся с вами в течении часа</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </sectin>
+        <!-- Auth modal end -->
+        
         <!-- header -->
         <div class="mobile_menu">
             <ul class="mobile_link">
@@ -210,14 +251,14 @@
         <!-- news_home -->
         <section class="new_home">
             <div class="main_container">
-                <h3 class="main_title">
+                <h3 class="main_title" data-aos="fade-up" data-aos-duration='4000'>
                     Курс на качество бизнеса: как компаниям развиваться в Интернете?
                 </h3>
                 <div class="new_home_in">
-                    <div class="new_home_img">
+                    <div class="new_home_img" data-aos="fade-right" data-aos-duration='4000'>
                         <img src="./images/news_main.png" alt="">
                     </div>
-                    <div class="new_home_text">
+                    <div class="new_home_text" data-aos="fade-left" data-aos-duration='4000'>
                         <p class="new_home_text_one">
                             Традиционный digital-маркетинг уже не обеспечивает бизнесу лидерство в Интернете. Конкуренция в онлайне выросла в несколько раз, границы между офлайн и онлайн рынком стерлись. Теперь решает не качество сайта, а качество бизнеса. Денис Шубенок рассказал, как компаниям обновить философию продвижения в поисковых системах и не потерять клиентов.
                         </p>
@@ -244,45 +285,45 @@
         </section>
         <!-- news_home -->
 
-        <div class="new_home_under_text">
+        <div class="new_home_under_text"  >
             <div class="main_container">
-                <h3>
+                <h3 data-aos="fade-up" data-aos-duration='4000'>
                     Почему традиционный подход к продвижению уже не работает, как раньше?
                 </h3>
-                <p>
+                <p data-aos="fade-up" data-aos-duration='4000'>
                     За последние 7 лет в России почти вдвое выросла доля онлайн-покупателей: ее пополнили «поколение Y», «зуммеры», «тик-токеры» и представители «возраста счастья». Эффект перехода аудитории в онлайн кратно усилился и на фоне пандемии. Вместе с тем обновляется и электронный рынок: растет индекс цифровизации, появляются новые технологии продвижения, предложения на рынке, расширяются каналы коммуникации, стираются грани между онлайн и офлайн торговлей.Все это приводит к тому, что потребительских сценариев становится очень много: маркетологам все сложнее с уверенностью сказать, куда именно пойдет потенциальный клиент искать товар, с помощью какого канала он познакомится с вашим брендом, с какого устройства дойдет до транзакции и так далее. В результате бизнес недополучает клиентов, теряет темпы роста и не может выйти на лидирующие позиции в тематике.Возникает закономерный вопрос: на чем именно сегодня фокусироваться digital-маркетологам, чтобы стать лидером тематики? На продвижении и оптимизации сайта, генерации уникального контента, настройке рекламных инструментов, продвижении в социальных сетях? В чем заключается успех продвижения бренда в Интернете сегодня – в высоких показателях конверсии и трафика?На наш взгляд, если вы хотите уже завтра быть лидером рынка, то сегодня недостаточно просто создать сайт или приложение, обеспечить бизнесу присутствие в онлайне, использовать как можно больше каналов продвижения для генерации лидов, настраивать рекламные инструменты и оптимизировать сайт. Такой подход к digital-маркетингу сформировался со времен нулевых-десятых годов, устарел и перестал быть «волшебной таблеткой» для бизнеса.Успеха добиваются те, кто фокусируется не на фичах сайта и инструментах, а на развитии бизнеса и создании ценности для клиентов – это ключ бизнес-ориентированного подхода к продвижению бизнеса в Интернете. В отличие от традиционного digital-маркетинга, новый подход берет курс на развитие бизнеса как продукта. Целью в данном контексте является не продажа товара или услуги, а решение ценностной проблемы пользователя. Разрабатывая цифровые продукты с фокусом на пользовательский опыт (UX), бизнес начинает лучше понимать своих клиентов и их истинные потребности. Далее подробнее расскажем, в чем заключаются особенности и отличия бизнес-ориентированного подхода от традиционного, как они отражаются на применении рекламных инструментов и результатах продвижения.
                 </p>
 
-                <img class="news_center_img" src="./images/news_center.png" alt="">
+                <img class="news_center_img" src="./images/news_center.png" alt="" data-aos="fade-up" data-aos-duration='4000'>
 
-                <p>
+                <p data-aos="fade-up" data-aos-duration='4000'>
                     При стандартном подходе digital-маркетологи следуют запросам бизнеса. Клиент приходит всегда с одной задачей: получить больше продаж. И его запрос к маркетингу, как правило, включает требование улучшить качество рекламных инструментов. То есть доработать сайт с точки зрения поискового маркетинга, улучшить показатели трафика и конверсий, поработать с репутацией путем написания большего количества отзывов.
                     Бизнес-ориентированное продвижение отталкивается не от конечной задачи, а от проблемы бизнеса и клиента. Развитие компании происходит не столько за счёт генерации лидов, сколько за счет повышения качества бизнеса и вашего продукта, за счет удовлетворения потребности покупателей и улучшения бизнеса на всех этапах омниканального пути клиента.
                 </p>
 
-                <img class="news_center_img" src="./images/new_center2.png" alt="">
+                <img class="news_center_img" src="./images/new_center2.png" alt="" data-aos="fade-up" data-aos-duration='4000'>
 
-                <h3 class="new_home_under_title">
+                <h3 class="new_home_under_title" data-aos="fade-up" data-aos-duration='4000'>
                     Как меняется маркетинг при бизнес-ориентированном подходе?
                 </h3>
-                <p>
+                <p data-aos="fade-up" data-aos-duration='4000'>
                     Итак, при бизнес-ориентированном подходе фокус маркетолога смещается на ценностное предложение, решающее проблемы ЦА через выбранные каналы продаж. Когда мы говорим про ценностное предложение, мы имеем в виду и клиентский сервис, и сайт, с которым взаимодействуют покупатели, и сам продукт, и рекламные объявления, и то, как вы представлены в поисковой выдаче. В этом и заключается отличие от стандартного подхода: мы работаем не только над тем, чтобы привлечь трафик и конвертировать его, а над всеми этапами воронки взаимодействия с клиентом.
                 </p>
                 
-                <img class="news_center_img" src="./images/new_center3.png" alt="">
+                <img class="news_center_img" src="./images/new_center3.png" alt="" data-aos="fade-up" data-aos-duration='4000'>
             </div>
         </div>
 
         <!-- articles -->
         <section class="articles">
             <div class="main_container">
-                <h2 class="main_title_under">
+                <h2 class="main_title_under"  data-aos="fade-up" data-aos-duration='4000'>
                     Другие статьи 
                     <span class="main_title_under_coral">
                         по теме
                     </span>
                 </h2>
-                <div class="swiper articlesSwiper">
+                <div class="swiper articlesSwiper"  data-aos="fade-up" data-aos-duration='4000'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="articles_card">
@@ -348,7 +389,7 @@
         <!-- articles -->
 
         <!-- seo_promation -->
-        <section class="seo_promation new_seo_promation">
+        <section class="seo_promation new_seo_promation"  data-aos="fade-up" data-aos-duration='4000'>
             <div class="main_container">
                 <h3 class="main_title_under">
                     Вы готовы сделать 
@@ -545,6 +586,7 @@
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- bootstrap -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Swiper js -->

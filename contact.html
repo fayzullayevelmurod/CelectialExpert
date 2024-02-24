@@ -7,6 +7,7 @@
     <!-- Swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css file -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- bootstrap -->
@@ -21,6 +22,46 @@
 </head>
 <body class="hidden">
     <div class="wrapper">
+
+        <!-- Auth modal -->
+        <sectin class="auth_modal">
+            <div class="auth_modal__bg"></div>
+            <div class="auth_modal__content">
+                <button class="auth_modal__close">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L27 27M3 27L27 3" stroke="#363D44"/>
+                    </svg>
+                </button>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <form>
+                                <div class="title">Получите предложение по продвижению</div>
+                                <div class="form_control">
+                                    <input type="text" placeholder="Ваше имя">
+                                    <p>Данное поле должно быть заполнено</p>
+                                </div>
+                                <div class="form_control">
+                                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                                    <p>Данное поле должно быть заполнено</p>
+                                </div>
+                                <button class="main_btn_black" type="submit">Получить предложение</button>
+                                <p>Нажимая кнопку «Получить предложение», Вы принимаете условия <br> Пользовательского соглашения</p>
+                            </form>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="title">Спасибо за заявку!</div>
+                            <div class="description">Ваша заявка успешно отправлена. Мы свяжемся с вами в течении часа</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </sectin>
+        <!-- Auth modal end -->
 
         <!-- header -->
         <div class="mobile_menu">
@@ -210,11 +251,11 @@
         <!-- contact_home -->
         <section class="contact_home">
             <div class="main_container">
-                <h3 class="contact_title">
+                <h3 class="contact_title"  data-aos="fade-up" data-aos-duration='4000'>
                     Контакты
                 </h3>
                 <div class="contact_home_in">
-                    <div class="contact_home_left">
+                    <div class="contact_home_left" data-aos="fade-right" data-aos-duration='4000'>
                         <a class="contact_logo" href="#">
                             <img src="./images/logo/contact_logo.svg" alt="">
                         </a>
@@ -239,7 +280,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="contact_home_right">
+                    <div class="contact_home_right"  data-aos="fade-left" data-aos-duration='4000'>
                         <img src="./images/contact_year.png" alt="">
                     </div>
                 </div>
@@ -248,7 +289,7 @@
         <!-- contact_home -->
 
         <!-- contact -->
-        <section class="contact contact_block">
+        <section class="contact contact_block"  data-aos="fade-up" data-aos-duration='4000'>
             <div class="main_container">
                 <h3 class="main_title_under">
                     УБЕДИТЕСЬ В КАЧЕСТВЕ 
@@ -458,6 +499,7 @@
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Swiper js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- js file -->
     <script src="./js/main.js"></script>
     <!-- js file -->

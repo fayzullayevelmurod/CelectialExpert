@@ -7,6 +7,7 @@
     <!-- Swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css file -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- bootstrap -->
@@ -21,6 +22,46 @@
 </head>
 <body class="hidden">
     <div class="wrapper">
+
+        <!-- Auth modal -->
+        <sectin class="auth_modal">
+            <div class="auth_modal__bg"></div>
+            <div class="auth_modal__content">
+                <button class="auth_modal__close">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3L27 27M3 27L27 3" stroke="#363D44"/>
+                    </svg>
+                </button>
+
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <form>
+                                <div class="title">Получите предложение по продвижению</div>
+                                <div class="form_control">
+                                    <input type="text" placeholder="Ваше имя">
+                                    <p>Данное поле должно быть заполнено</p>
+                                </div>
+                                <div class="form_control">
+                                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                                    <p>Данное поле должно быть заполнено</p>
+                                </div>
+                                <button class="main_btn_black" type="submit">Получить предложение</button>
+                                <p>Нажимая кнопку «Получить предложение», Вы принимаете условия <br> Пользовательского соглашения</p>
+                            </form>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="title">Спасибо за заявку!</div>
+                            <div class="description">Ваша заявка успешно отправлена. Мы свяжемся с вами в течении часа</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </sectin>
+        <!-- Auth modal end -->
 
         <!-- header -->
         <div class="mobile_menu">
@@ -192,7 +233,7 @@
         <!-- home -->
         <section class="home services_home">
             <div class="main_container">
-                <div class="home_text">
+                <div class="home_text" data-aos="fade-right" data-aos-duration='4000'>
                     <ul class="main_breadcrumbs">
                         <li>
                             <span>
@@ -229,7 +270,7 @@
                         Получить предложение
                     </a>
                 </div>
-                <div class="home_img">
+                <div class="home_img" data-aos="fade-left" data-aos-duration='4000'>
                     <img src="./images/services_home_media.png" alt="">
                 </div>
                 <img class="home_user_desktop" src="./images/services_img.png" alt="">
@@ -239,7 +280,7 @@
 
         <!-- services_home_under -->
         <section class="services_home_under">
-            <div class="main_container">
+            <div class="main_container" data-aos="fade-left" data-aos-duration='4000'>
                 <a href="#" class="services_home_card card_one">
                     <svg width="116" height="116" viewBox="0 0 116 116" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1743 81.3933C13.5426 81.0546 14.2954 80.8197 15.4034 80.1118C16.6526 79.314 17.1623 78.5238 18.0361 77.9527C20.3123 75.077 21.0644 71.1489 19.4587 67.3398C19.2061 66.7408 19.0016 66.3647 18.6749 65.869C18.2697 65.2529 17.9493 65.0244 17.5853 64.476C16.6862 63.9505 16.1094 63.1857 14.8342 62.5031C13.9395 62.0251 12.0154 61.6268 11.5614 61.3229C8.14557 61.3229 5.69396 61.5743 3.21072 64.0828C1.36128 65.95 0.136761 67.5905 0 70.995V72.255C0.3552 79.6401 8.82936 82.9553 12.1743 81.3933ZM54.3336 28.1817C54.3336 33.8447 61.0975 32.4992 61.0975 29.0833C61.0975 23.4198 54.3336 24.7652 54.3336 28.1817ZM34.0435 7.89101C34.0435 13.5546 40.8068 12.2085 40.8068 8.79262C40.8068 3.12905 34.0435 4.4745 34.0435 7.89101ZM4.73475 102.581C4.73475 108.244 11.4981 106.899 11.4981 103.482C11.4981 97.8186 4.73475 99.1641 4.73475 102.581ZM92.6603 100.326C92.6603 105.989 99.4243 104.644 99.4243 101.228C99.4243 95.5646 92.6603 96.91 92.6603 100.326ZM70.1156 80.0352C70.1156 85.6987 76.8789 84.3533 76.8789 80.9374C76.8789 75.2739 70.1156 76.6193 70.1156 80.0352ZM27.2795 73.2718C27.2795 78.9354 34.0435 77.5899 34.0435 74.1734C34.0435 68.5099 27.2795 69.8553 27.2795 73.2718ZM85.4385 41.7084C84.5705 42.4467 83.4701 42.8462 82.621 43.6155C82.1708 44.0232 81.7884 44.3993 81.4022 44.8761C80.8912 45.5074 80.9311 45.7821 80.2606 46.2247C79.8091 48.133 77.7457 51.0949 80.2562 55.9164C81.5409 58.3832 83.9569 60.4144 87.0246 61.0918C90.8716 61.4382 90.4588 61.2216 93.7879 60.3396C95.3841 59.3709 95.8368 59.0265 97.1171 57.6633C98.1232 56.592 98.8032 55.0509 99.2065 53.4319C99.3021 51.8794 99.5503 51.1956 99.259 49.5513C99.0267 48.2413 98.5297 47.4347 98.3511 46.4432C96.2332 43.2894 93.8082 41.0493 89.5091 41.0215C87.2829 41.0069 87.0695 41.3349 85.4385 41.7084ZM28.6325 95.3867C27.1889 95.7583 26.4146 96.0173 25.2781 96.7467C24.2802 97.3881 23.6446 98.2529 22.7708 98.8032C18.5603 104.091 20.5123 111.203 25.4813 114.074C26.6862 114.769 28.264 115.282 29.9185 115.431H31.8401C32.8075 115.34 33.763 115.102 34.6488 114.684C37.0978 113.528 39.4551 111.501 40.2332 108.668C40.9727 106.116 40.9651 104.44 40.2168 101.904C39.9831 100.946 39.5773 100.368 39.2284 99.568C38.3679 99.0507 37.7556 97.9699 36.723 97.1987C36.35 96.9202 35.682 96.4839 35.2015 96.249L33.6838 95.4778C33.6623 95.4063 33.5958 95.4069 33.5566 95.3658C32.1624 95.3658 29.9279 94.6971 28.6325 95.3867ZM50.2756 101.992C50.4979 102.359 49.8382 104.385 49.8363 105.286C49.835 106.052 50.3769 108.395 50.2756 108.565C52.1092 112.966 55.4555 115.09 58.8853 115.431H60.8917C65.7043 114.956 70.1263 111.114 70.1263 105.286C70.1263 96.9854 61.0127 92.4241 54.3709 96.7555C52.4487 98.0092 51.219 99.7991 50.2756 101.992ZM84.77 15.0817C85.4955 15.542 85.3448 15.7092 85.814 16.3208C86.2008 16.8267 86.6168 17.2072 87.022 17.5928C88.0003 18.5236 89.0241 18.856 89.9054 19.6145C92.2905 20.1172 94.2178 20.9511 97.4349 19.6538C103.825 17.0762 106.802 8.87999 100.611 2.64595C99.0526 1.07573 97.1126 0.227936 95.1074 0H92.8439C87.6565 0.574904 82.8097 5.03295 83.6954 11.6703C83.7493 12.0736 83.9519 13.0462 84.1184 13.5027C84.34 14.1105 84.5946 14.3682 84.77 15.0817ZM25.4826 30.2103C25.8542 29.3866 27.0015 28.6357 27.6669 27.667C28.3451 26.6799 28.8453 25.0413 29.3088 24.4233C29.5633 20.9416 29.7943 19.7139 28.3368 16.9787C23.4413 7.7935 8.35637 11.1613 9.25228 22.9873C9.45742 25.6991 10.7143 27.5125 12.23 29.0276C13.8021 30.6004 15.8675 31.8243 18.2678 32.0079C22.6056 32.3396 23.8743 30.6339 25.4826 30.2103ZM99.1102 72.3702C98.4859 73.282 97.6793 73.7087 96.9214 74.8269C96.161 75.9494 95.8964 77.1759 95.3658 77.961C95.091 81.5472 94.8466 82.5786 96.3402 85.3733C101.056 94.1976 114.529 91.2629 115.431 81.5415V79.4356C115.423 79.3431 115.417 79.2513 115.406 79.1583C115.135 76.6769 113.937 74.8294 112.332 73.2142C108.537 69.3944 103.373 69.4868 99.1102 72.3702Z" fill="#D9D9D9"/>
@@ -288,7 +329,7 @@
         <!-- services_home_under -->
 
         <!-- services_seo -->
-        <section class="services_seo">
+        <section class="services_seo" data-aos="fade-left" data-aos-duration='4000'>
             <div class="main_container">
                 <img class="services_seo_img" src="./images/services_seo.png" alt="">
                 <div class="services_seo_text">
@@ -315,13 +356,13 @@
         <!-- why_seo -->
         <section class="why_seo">
             <div class="main_container">
-                <h3 class="main_title_under">
+                <h3 class="main_title_under"  data-aos="fade-up" data-aos-duration='4000'>
                     Почему
                     <span class="main_title_under_coral">
                         SEO
                     </span>
                 </h3>
-                <div class="why_seo_in">
+                <div class="why_seo_in"  data-aos="fade-up" data-aos-duration='4000'> 
                     <div class="why_seo_card">
                         <img src="./images/icons/why_seo1.svg" alt="">
                         <div class="why_seo_card_text">
@@ -374,13 +415,13 @@
         <!-- cases -->
         <section class="cases">
             <div class="main_container">
-                <h2 class="main_title_under">
+                <h2 class="main_title_under"  data-aos="fade-up" data-aos-duration='4000'>
                     Наши  
                     <span class="main_title_under_coral">
                         КЕЙСЫ
                     </span>
                 </h2>
-                <div class="swiper casesSwiper">
+                <div class="swiper casesSwiper"  data-aos="fade-up" data-aos-duration='4000'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="cases_card">
@@ -712,13 +753,13 @@
         <!-- order_services -->
         <section class="order_services">
             <div class="main_container">
-                <div class="main_title_under">
+                <div class="main_title_under"  data-aos="fade-up" data-aos-duration='4000'>
                     Почему стоит заказать 
                     <span class="main_title_under_coral">
                         услугу у нас
                     </span>
                 </div>
-                <div class="order_services_in">
+                <div class="order_services_in"  data-aos="fade-up" data-aos-duration='4000'>
                     <div class="order_services_card">
                         <img src="./images/icons/order_services1.svg" alt="">
                         <h6>
@@ -779,14 +820,14 @@
         <!-- order_services -->
 
         <!-- partner -->
-        <section class="partner">
+        <section class="partner"  data-aos="fade-up" data-aos-duration='4000'>
             <h2 class="main_title_under partner_title_two">
                 Нам
                 <span class="main_title_under_coral">
                     доверяют  
                 </span>
             </h2>
-            <div class="swiper partnerSwiper">
+            <div class="swiper partnerSwiper"  data-aos="fade-up" data-aos-duration='4000'>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="partner_card">
@@ -887,13 +928,13 @@
         <!-- seo_text -->
         <section class="seo_text">
             <div class="main_container">
-                <h3 class="main_title_under">
+                <h3 class="main_title_under"  data-aos="fade-up" data-aos-duration='4000'>
                     Сео
                     <span class="main_title_under_coral">
                         текст
                     </span>
                 </h3>
-                <div class="seo_text_content">
+                <div class="seo_text_content"  data-aos="fade-up" data-aos-duration='4000'> 
                     <p>
                         Мы работаем в строгом соответствии с рекомендациями поисковых систем. Яндекс и Google давно дали понять, что техническая оптимизация для них не так важна. Сейчас всё крутится вокруг удобства пользователя и его поведении на странице.
                     </p>
@@ -911,13 +952,13 @@
         <!-- answer -->
         <section class="answer">
             <div class="main_container">
-                <h3 class="main_title_under">
+                <h3 class="main_title_under"  data-aos="fade-up" data-aos-duration='4000'>
                     Вопрос 
                     <span class="main_title_under_coral">
                         ответ
                     </span>
                 </h3>
-                <div class="answer_in">
+                <div class="answer_in"  data-aos="fade-up" data-aos-duration='4000'>
                     <div class="accordion">
                         <div class="accordion-item">
                           <button id="accordion-button-1" aria-expanded="false">
@@ -1030,7 +1071,7 @@
         <!-- contact -->
         <section class="contact">
             <div class="main_container">
-                <h3 class="main_title_under">
+                <h3 class="main_title_under"  data-aos="fade-up" data-aos-duration='4000'>
                     УБЕДИТЕСЬ В КАЧЕСТВЕ 
                     <span class="main_title_under_coral">
                         НАШИХ УСЛУГ
@@ -1235,6 +1276,7 @@
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- bootstrap -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Swiper js -->

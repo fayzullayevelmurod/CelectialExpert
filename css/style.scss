@@ -3097,12 +3097,32 @@ header.active {
         opacity: 0.5;
         @include flex-center();
         justify-content: space-between;
+        position: relative;
+
+        .progress_block_in {
+            position: absolute;
+            left: 0;
+            top: -2px;
+            width: 33%;
+            border-radius: 10px;
+            height: 6px;
+            background-color: rgb(149, 128, 61, 1);
+        }
 
         .circle {
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            background: rgb(217, 217, 217);
+            background: #D9D9D9FF;
+        }
+
+        .one {
+            // background: linear-gradient(-64.70deg, rgb(149, 128, 61) -28.505%,rgb(162, 139, 69) -14.098%,rgb(201, 174, 95) 7.232%,rgb(234, 212, 168) 53.429%,rgb(216, 177, 84) 109.214%,rgb(140, 109, 59) 138.85%);
+            background-color: #A68444FF;
+        }
+
+        .two {
+            background-color: #A68444FF;
         }
     }
 

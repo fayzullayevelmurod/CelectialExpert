@@ -2503,12 +2503,28 @@ header.active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+.process_slider_wrapper .progress_block .progress_block_in {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 33%;
+  border-radius: 10px;
+  height: 6px;
+  background-color: rgb(149, 128, 61);
 }
 .process_slider_wrapper .progress_block .circle {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: rgb(217, 217, 217);
+  background: #d9d9d9;
+}
+.process_slider_wrapper .progress_block .one {
+  background-color: #a68444;
+}
+.process_slider_wrapper .progress_block .two {
+  background-color: #a68444;
 }
 .process_slider_wrapper .process_slider .process_slider_card {
   display: flex;
@@ -4077,6 +4093,20 @@ footer .footer_bottom p span {
   }
   .process_slider_wrapper .main_container {
     padding: 20px;
+  }
+  .process_slider_wrapper h4 {
+    margin-bottom: 20px;
+  }
+  .process_slider_wrapper .progress_block .progress_block_in {
+    height: 4px;
+    top: -1px;
+  }
+  .process_slider_wrapper .progress_block .circle {
+    width: 15px;
+    height: 15px;
+  }
+  .process_slider_wrapper .progress_block {
+    margin-bottom: 30px;
   }
   .process_slider_wrapper .process_slider .process_slider_card {
     gap: 20px;
