@@ -101,30 +101,30 @@ if (auth_modal_open.length) {
 
 // services
 try {
-var init = false;
-var swiper;
-function servicesSwiper() {
-    if (window.innerWidth <= 743) {
-        if (!init) {
-            init = true;
-            swiper = new Swiper(".servicesSwiper", {
-                slidesPerView: 1.50,
-                spaceBetween: 10,
-                breakpoints: {
-                    743: {
-                        slidesPerView: 1.50,
-                    }
-                },
-                pagination: {
-                    el: ".services-pagination",
-                },
-            });
+    var init0 = false;
+    var swiper0;
+    function servicesSwiper0() {
+        if (window.innerWidth <= 743) {
+            if (!init0) {
+                init0 = true;
+                swiper0 = new Swiper(".servicesSwiper", {
+                    slidesPerView: 1.50,
+                    spaceBetween: 10,
+                    breakpoints: {
+                        743: {
+                            slidesPerView: 1.50,
+                        }
+                    },
+                    pagination: {
+                        el: ".services-pagination",
+                    },
+                });
+            }
+        } else if (init0) {
+            swiper0.destroy();
+            init0 = false;
         }
-    } else if (init) {
-        swiper.destroy();
-        init = false;
     }
-}
 
 } catch(err) {
     console.log(err);
@@ -192,10 +192,12 @@ function casesSwiper() {
 
 casesSwiper();
 servicesSwiper();
+servicesSwiper0();
 
 window.addEventListener("resize", () => {
     casesSwiper();
     servicesSwiper();
+    servicesSwiper0();
 });
 
 // services
